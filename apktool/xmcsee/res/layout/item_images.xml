@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="0.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="18.0sp" n1:textColor="#ff5c5c5c" n1:id="@id/tvTitle" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:text="AAAAAAAAAImages" />
+    <View n1:id="@id/img_line" n1:background="#ffdddddd" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="8.0dip" n1:layout_marginRight="8.0dip" n1:layout_marginBottom="6.0dip" />
+    <com.ui.controls.XImages.NoScrollGridView n1:id="@id/gvImages" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:horizontalSpacing="1.0dip" n1:verticalSpacing="1.0dip" n1:numColumns="4" />
+</LinearLayout>

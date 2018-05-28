@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:id="@id/conn_que" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:orientation="vertical" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <RelativeLayout n1:paddingTop="12.0dip" n1:paddingBottom="12.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip">
+            <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/login_page_color" n1:gravity="center" n1:id="@id/title_que" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="title_que" n1:layout_centerInParent="true" />
+            <TextView n1:id="@id/cancel_que" n1:background="@drawable/wifi_close" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+        <TextView n1:textSize="@dimen/small_text_size" n1:textColor="@color/hint_color" n1:gravity="left" n1:id="@id/content_que" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:text="content_que" n1:layout_below="@id/title_que" />
+        <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginTop="20.0dip" />
+        <TextView n1:textSize="15.0sp" n1:textColor="@color/theme_color" n1:gravity="center" n1:id="@id/prompt_que" n1:paddingLeft="8.0dip" n1:paddingRight="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:layout_marginBottom="15.0dip" n1:text="prompt_que" n1:layout_below="@id/content_que" n1:layout_centerHorizontal="true" />
+    </LinearLayout>
+</LinearLayout>

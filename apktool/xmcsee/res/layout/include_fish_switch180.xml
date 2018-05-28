@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:layout_gravity="left" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="90.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center_vertical" n1:id="@id/fish180_open" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/fish_install" />
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/fish180_ll" n1:background="@color/monitor_top" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/fish180_close" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/fish_close" />
+        <com.ui.controls.ButtonCheck n1:id="@id/fish180_ball" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n2:NormalBkg="@drawable/fish180_mode_ball_nor" n2:SelectedBkg="@drawable/fish180_mode_ball_sel" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <View n1:gravity="center_vertical" n1:background="@color/monitor_top" n1:layout_width="0.5dip" n1:layout_height="24.0dip" />
+        <com.ui.controls.ButtonCheck n1:id="@id/fish180_rectangle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n3:NormalBkg="@drawable/fish_mode_rectangle_nor" n3:SelectedBkg="@drawable/fish_mode_rectangle_sel" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <View n1:gravity="center_vertical" n1:background="@color/monitor_top" n1:layout_width="0.5dip" n1:layout_height="24.0dip" />
+        <com.ui.controls.ButtonCheck n1:id="@id/fish180_cylinder" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n4:NormalBkg="@drawable/fish_mode_cylinder_nor" n4:SelectedBkg="@drawable/fish_mode_cylinder_sel" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <View n1:gravity="center_vertical" n1:background="@color/monitor_top" n1:layout_width="0.5dip" n1:layout_height="24.0dip" />
+        <com.ui.controls.ButtonCheck n1:id="@id/fish180_4r" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n5:NormalBkg="@drawable/fish_mode_4r_nor" n5:SelectedBkg="@drawable/fish_mode_4r_sel" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <View n1:gravity="center_vertical" n1:background="@color/monitor_top" n1:layout_width="0.5dip" n1:layout_height="24.0dip" />
+        <com.ui.controls.ButtonCheck n1:id="@id/fish180_3r" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n6:NormalBkg="@drawable/fish_mode_3r_nor" n6:SelectedBkg="@drawable/fish_mode_3r_sel" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</LinearLayout>

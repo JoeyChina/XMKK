@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/black" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <SurfaceView n1:id="@id/capture_preview" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <RelativeLayout n1:id="@id/capture_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageView n1:id="@id/capture_mask_top" n1:background="@drawable/qr_scan_mask" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/capture_crop_view" n1:layout_alignParentTop="true" />
+        <RelativeLayout n1:id="@id/capture_crop_view" n1:background="@drawable/qr_capture" n1:layout_width="200.0dip" n1:layout_height="200.0dip" n1:layout_centerInParent="true">
+            <ImageView n1:id="@id/capture_scan_line" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/qr_scan_line" n1:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <ImageView n1:id="@id/capture_mask_bottom" n1:background="@drawable/qr_scan_mask" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/capture_crop_view" n1:layout_alignParentBottom="true" />
+        <TextView n1:textSize="13.0sp" n1:textColor="@color/qr_scan" n1:id="@id/tv_tip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="30.0dip" n1:text="qr_scan_tips" n1:layout_below="@id/capture_crop_view" n1:layout_centerHorizontal="true" />
+        <ImageView n1:id="@id/capture_mask_left" n1:background="@drawable/qr_scan_mask" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_toLeftOf="@id/capture_crop_view" n1:layout_above="@id/capture_mask_bottom" n1:layout_below="@id/capture_mask_top" n1:layout_alignParentLeft="true" />
+        <ImageView n1:id="@id/capture_mask_right" n1:background="@drawable/qr_scan_mask" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_toRightOf="@id/capture_crop_view" n1:layout_above="@id/capture_mask_bottom" n1:layout_below="@id/capture_mask_top" n1:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center" n1:background="@color/white40" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <ImageView n1:layout_gravity="center" n1:id="@id/capture_flash" n1:tag="1" n1:background="@drawable/flash_default" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

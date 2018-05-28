@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/alarm_setting_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightText="finish" n2:RightTextColor="@color/white" n2:TitleText="alarm_set" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n1:background="@color/white" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/alarm_setting_title">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:padding="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="set_open" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                <com.ui.controls.ButtonCheck n1:id="@id/alarm_setting_open" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n3:NormalBkg="@drawable/icon_off" n3:SelectedBkg="@drawable/icon_open" n3:TextNormalColor="@color/hint_color" n3:TextSelectedColor="@color/hint_color" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+            <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+            <RelativeLayout n1:id="@id/edit_rl" n1:padding="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="set_edit" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                <com.ui.controls.ButtonCheck n1:id="@id/alarm_setting_edit" n1:paddingLeft="40.0dip" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n4:NormalBkg="@drawable/icon_next" n4:SelectedBkg="@drawable/pop_nor" n4:TextNormalColor="@color/hint_color" n4:TextSelectedColor="@color/hint_color" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+            <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/edit_content" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <android.support.constraint.ConstraintLayout n1:id="@id/alarm_setting_date_rl" n1:padding="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <android.support.constraint.Guideline n1:orientation="vertical" n1:id="@id/glDataMaxWidth" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n5:layout_constraintGuide_percent="0.3" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="set_week" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toTopOf="parent" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+                    <com.ui.controls.ScrollForeverTextView n1:ellipsize="marquee" n1:gravity="right" n1:id="@id/alarm_setting_date" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:text="" n1:singleLine="true" n1:drawableRight="@drawable/icon_next" n1:drawablePadding="5.0dip" n7:layout_constraintEnd_toEndOf="parent" n7:layout_constraintStart_toStartOf="@id/glDataMaxWidth" xmlns:n7="http://schemas.android.com/apk/res-auto" />
+                </android.support.constraint.ConstraintLayout>
+                <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+                <RelativeLayout n1:id="@id/alarm_setting_start_time_rl" n1:padding="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="set_start" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                    <TextView n1:id="@id/alarm_setting_start_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="06:00" n1:drawableRight="@drawable/icon_next" n1:drawablePadding="5.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+                <RelativeLayout n1:id="@id/alarm_setting_stop_time_rl" n1:padding="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="set_finish" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                    <TextView n1:id="@id/alarm_setting_stop_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="19:00" n1:drawableRight="@drawable/icon_next" n1:drawablePadding="5.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View n1:background="@color/line_color" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+                <RelativeLayout n1:padding="20.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="set_repeat" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                    <com.ui.controls.ButtonCheck n1:id="@id/alarm_setting_Repeat" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n8:NormalBkg="@drawable/icon_off" n8:SelectedBkg="@drawable/icon_open" n8:TextNormalColor="@color/hint_color" n8:TextSelectedColor="@color/hint_color" xmlns:n8="http://schemas.android.com/apk/res-auto" />
+                </RelativeLayout>
+                <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+                <RelativeLayout n1:id="@id/alarm_setting_Label_rl" n1:padding="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="set_tip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                    <TextView n1:id="@id/tv_label_show" n1:paddingRight="15.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="set_tip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include n1:id="@id/alarm_setting_buttom_timepick" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true" layout="@layout/activity_taskadd_timepicker" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_gravity="center|right" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="25.0dip" n1:weightSum="2.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.RippleButton n1:gravity="bottom" n1:id="@id/monitor_talk_scr" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:layout_weight="1.0" n2:NormalBkg="@drawable/talk_scr" n2:RippleRes="@drawable/voice_mail_talk_wave_scr" n2:SelectedBkg="@drawable/talk_scr_pressed" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.ui.controls.ButtonCheck n1:layout_gravity="top" n1:id="@id/monitor_snapshot_scr" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_weight="1.0" n3:NormalBkg="@drawable/snapshot_selector_scr" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

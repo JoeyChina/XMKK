@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/bg_dialog_btn" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="16.0dip" n1:gravity="center" n1:id="@id/screen1" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="50.0dip" />
+    <View n1:background="@color/line_gray" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <TextView n1:textSize="16.0dip" n1:gravity="center" n1:id="@id/screen2" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="50.0dip" />
+    <View n1:background="@color/line_gray" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <TextView n1:textSize="16.0dip" n1:gravity="center" n1:id="@id/screen3" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="50.0dip" />
+    <View n1:id="@id/divider" n1:background="@color/line_gray" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/btnLl" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="2.0" n1:divider="@drawable/divider" n1:showDividers="middle">
+        <Button n1:id="@id/cancel" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+        <Button n1:id="@id/sure" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

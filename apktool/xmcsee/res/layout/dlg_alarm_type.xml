@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/alarm_type_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightText="alarm_set_save" n2:RightTextColor="@color/white" n2:TitleText="alarm_type" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/white" n1:paddingLeft="10.0dip" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+        <CheckBox n1:textSize="@dimen/small_text_size" n1:textColor="@color/login_page_color" n1:id="@id/alarm_img" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:text="type_img" n1:drawableLeft="@drawable/radio_btn" n1:drawablePadding="6.0dip" />
+    </LinearLayout>
+    <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/white" n1:paddingLeft="10.0dip" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+        <CheckBox n1:textSize="@dimen/small_text_size" n1:textColor="@color/login_page_color" n1:id="@id/alarm_video" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:text="type_video" n1:drawableLeft="@drawable/radio_btn" n1:drawablePadding="6.0dip" />
+    </LinearLayout>
+</LinearLayout>

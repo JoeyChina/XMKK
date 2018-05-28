@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout n1:orientation="vertical" n1:background="#bb000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/device_guide1" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/device_guide_add" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/device_guide_add" n1:layout_alignParentRight="true" />
+        <ImageView n1:id="@id/device_guide_add_des" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:src="@drawable/device_guide_des" n1:layout_toLeftOf="@id/device_guide_add" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/device_guide2" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/device_guide_item" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/device_guide_toolbar" n1:scaleType="fitXY" n1:layout_centerHorizontal="true" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="16.0dip" n1:src="@drawable/guide_i_know" n1:scaleType="centerInside" n1:layout_centerHorizontal="true" />
+    </LinearLayout>
+</AbsoluteLayout>

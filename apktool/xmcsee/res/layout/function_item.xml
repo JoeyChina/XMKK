@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:padding="15.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/function_view_ico" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    <TextView n1:textSize="24.0px" n1:textColor="#ff323232" n1:layout_gravity="center" n1:id="@id/function_view_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</LinearLayout>

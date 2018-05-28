@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:background="@color/grey_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/alert_type_title" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/alert_area_setting" n1:background="@android:color/white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="2.0">
+            <Button n1:textColor="@color/smart_analyze_pressed_text_color" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/boundary_application_scenarios" n1:background="@android:color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="application_scenarios" n1:layout_weight="1.0" />
+            <Button n1:textColor="@color/smart_analyze_pressed_text_color" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/boundary_alert_direction" n1:background="@android:color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="boundary_alert_direction" n1:layout_weight="1.0" />
+        </LinearLayout>
+        <Button n1:textColor="@color/smart_analyze_pressed_text_color" n1:gravity="center" n1:id="@id/alert_line_trigger_direction" n1:background="@android:color/white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="alert_line_trigger_direction" />
+        <Button n1:textColor="@color/smart_analyze_pressed_text_color" n1:gravity="center" n1:id="@id/goods_application_scenarios" n1:background="@android:color/white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="application_scenarios" />
+    </LinearLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="15.0dip" n1:layout_alignParentBottom="true">
+        <Button n1:textColor="@android:color/darker_gray" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/smart_analyze_revoke" n1:background="@android:color/transparent" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="smart_analyze_revoke" n1:layout_alignParentLeft="true" />
+        <Button n1:textColor="@color/login_page_color" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/smart_analyze_save" n1:background="@android:color/transparent" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="alarm_set_save" n1:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

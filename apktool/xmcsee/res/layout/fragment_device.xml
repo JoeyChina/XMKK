@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/device_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:RightBtn_Nor="@drawable/nav_add_nor" n2:RightBtn_Sel="@drawable/nav_add_sel" n2:SecondRightBtn_Nor="@drawable/drag_sort_nor" n2:SecondRightBtn_Sel="@drawable/drag_sort_sel" n2:TitleText="main_dev_name" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/device_title">
+        <com.xworld.widget.MyListView n1:scrollbarStyle="insideOverlay" n1:id="@id/main_lv" n1:persistentDrawingCache="all" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@drawable/device_list_selector" n1:divider="@null" n1:dividerHeight="10.0dip" />
+        <com.xworld.widget.DragListView n1:scrollbarStyle="insideOverlay" n1:id="@id/main_lv_simple" n1:background="@android:color/white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@drawable/device_list_selector" n1:divider="@null" n1:dividerHeight="10.0dip" n3:collapsed_height="2.0dip" n3:drag_enabled="true" n3:drag_scroll_start="0.33" n3:float_alpha="0.3" n3:float_background_color="@color/white" n3:max_drag_scroll_speed="0.5" n3:slide_shuffle_speed="0.3" n3:track_drag_sort="false" n3:use_default_controller="false" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <ImageView n1:id="@id/imgDevListEmpty" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/tip_device_list_empty" n1:layout_centerInParent="true" />
+</RelativeLayout>

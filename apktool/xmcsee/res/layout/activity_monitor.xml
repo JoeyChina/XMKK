@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/monitor_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightBtn_Nor="@drawable/monitor_set" n2:RightBtn_Sel="@drawable/monitor_set" n2:SecondRightBtn_Nor="@drawable/title_btn4_nor" n2:SecondRightBtn_Sel="@drawable/title_btn4_sel" n2:TitleText="monitor" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n1:id="@id/layout_wnd" n1:background="@color/video_color" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/monitor_title">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <com.xworld.widget.MultiWinLayout n1:id="@id/mywndviews" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n3:NormalFrameBg="@drawable/wnd_margin_normal" n3:SelectedFrameBg="@drawable/wnd_margin_selected" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <ImageView n1:id="@id/ptz_up_arrow" n1:background="@drawable/ptz_up_arrow" n1:visibility="gone" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginTop="15.0dip" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" />
+            <ImageView n1:id="@id/ptz_right_arrow" n1:background="@drawable/ptz_up_arrow" n1:visibility="gone" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginRight="15.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:rotation="90.0" />
+            <ImageView n1:id="@id/ptz_down_arrow" n1:background="@drawable/ptz_up_arrow" n1:visibility="gone" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginBottom="15.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" n1:rotation="180.0" />
+            <ImageView n1:id="@id/ptz_left_arrow" n1:background="@drawable/ptz_up_arrow" n1:visibility="gone" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="15.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n1:rotation="270.0" />
+            <TextView n1:textSize="11.0sp" n1:textColor="@color/white" n1:id="@id/show_network_speed" n1:paddingTop="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0.0KB/S" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ImageView n1:background="@drawable/monitor_bg" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <include n1:layout_gravity="bottom|center" n1:id="@id/monitor_controls_layout_scr" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="8.0dip" layout="@layout/include_monitor_control_fur" />
+        <include n1:id="@id/monitor_controls_right_scr" n1:visibility="gone" layout="@layout/include_monitor_full_right" />
+        <Button n1:layout_gravity="bottom" n1:id="@id/low_lux" n1:background="@drawable/starlight_nor" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="85.0dip" />
+        <include n1:id="@id/monitor_controls_left_scr" n1:visibility="gone" layout="@layout/include_monitor_full_left" />
+        <com.ui.controls.XTitleBar n1:id="@id/monitor_title_scr" n1:background="@color/monitor_top" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n4:LeftBtn_Nor="@drawable/back_nor" n4:LeftBtn_Sel="@drawable/back_sel" n4:RightBtn_Nor="@drawable/monitor_set" n4:RightBtn_Sel="@drawable/monitor_set" n4:SecondRightBtn_Nor="@drawable/title_btn4_nor" n4:SecondRightBtn_Sel="@drawable/title_btn4_sel" n4:TitleText="monitor" n4:TitleTextColor="@color/white" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <RelativeLayout n1:layout_gravity="bottom|center|right" n1:id="@id/analytics_position_view" n1:background="@drawable/analytics_position_view" n1:visibility="gone" n1:layout_width="60.0dip" n1:layout_height="60.0dip" n1:layout_margin="10.0dip">
+            <com.ui.controls.drawgeometry.view.DrawGeometry n1:id="@id/analytics_drawGeometry" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        </RelativeLayout>
+    </FrameLayout>
+    <include n1:id="@id/monitor_controls_layout" n1:background="@color/grey_white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/layout_wnd" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" layout="@layout/include_monitor_control" />
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_above="@id/monitor_controls_layout">
+        <TextView n1:textSize="15.0sp" n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/show_notice_message" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="35.0sp" n1:text="" />
+    </FrameLayout>
+    <View n1:id="@id/li" n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_below="@id/monitor_controls_layout" />
+    <RelativeLayout n1:gravity="center_vertical" n1:id="@id/bottom_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_below="@id/li">
+        <com.ui.controls.RippleButton n1:id="@id/monitor_talk" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" n5:NormalBkg="@drawable/talk" n5:RippleRes="@drawable/voice_mail_talk_wave" n5:SelectedBkg="@drawable/talk_pressed" n5:Text="monitor_intercom" n5:TextNormalColor="@color/hint_color" n5:TextSelectedColor="@color/hint_color" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <com.ui.controls.ButtonCheck n1:id="@id/monitor_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toLeftOf="@id/monitor_talk" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n6:NormalBkg="@drawable/monitor_look_selector" n6:Text="monitor_view" n6:TextNormalColor="@color/hint_color" n6:TextSelectedColor="@color/hint_color" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <com.ui.controls.ButtonCheck n1:id="@id/monitor_snapshot" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/monitor_talk" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n7:NormalBkg="@drawable/snapshot_selector" n7:Text="monitor_snapshot" n7:TextNormalColor="@color/hint_color" n7:TextSelectedColor="@color/hint_color" xmlns:n7="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <include n1:id="@id/control_light" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/li" n1:layout_alignParentBottom="true" layout="@layout/switch_model_dialog" />
+    <FrameLayout n1:id="@id/monitor_tour_content" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/li" n1:layout_alignParentBottom="true" />
+</RelativeLayout>

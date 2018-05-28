@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/ripple_layout" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:paddingTop="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_above="@id/tab_tv" n1:layout_centerHorizontal="true">
+        <ImageView n1:layout_gravity="center" n1:id="@id/iv_ripple_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <ImageView n1:layout_gravity="center" n1:id="@id/iv_ripple_action_1" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <ImageView n1:layout_gravity="center" n1:id="@id/iv_ripple_action_2" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <ImageView n1:layout_gravity="center" n1:id="@id/iv_ripple_action_3" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView n1:id="@id/tab_tv" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="0.5dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/content" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/main_activity_bottom_menu_rl" />
+    <RelativeLayout n1:id="@id/main_activity_bottom_menu_rl" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <View n1:id="@id/line" n1:background="@color/bottom_line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+        <RadioGroup n1:gravity="center" n1:orientation="horizontal" n1:id="@id/radiogroup" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="51.0dip" n1:layout_below="@id/line">
+            <com.ui.controls.ButtonCheck n1:id="@id/devicelist" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n2:NormalBkg="@drawable/tab_video_nor" n2:SelectedBkg="@drawable/tab_video_select" n2:Text="tab_dev" n2:TextNormalColor="@color/menu_text_color" n2:TextSelectedColor="@color/menu_text_color" n2:TextSize="@dimen/menu_text_size" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <com.ui.controls.ButtonCheck n1:id="@id/media" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="tab_images" n1:layout_weight="1.0" n3:NormalBkg="@drawable/tab_photo_nor" n3:SelectedBkg="@drawable/tab_photo_select" n3:Text="tab_images" n3:TextNormalColor="@color/menu_text_color" n3:TextSelectedColor="@color/menu_text_color" n3:TextSize="@dimen/menu_text_size" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <com.ui.controls.ButtonCheck n1:id="@id/videosquare" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n4:NormalBkg="@drawable/tab_videosquare_nor" n4:SelectedBkg="@drawable/tab_videosquare_select" n4:Text="tab_videosquare" n4:TextNormalColor="@color/menu_text_color" n4:TextSelectedColor="@color/menu_text_color" n4:TextSize="@dimen/menu_text_size" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            <com.ui.controls.ButtonCheck n1:id="@id/personal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n5:NormalBkg="@drawable/tab_personal_nor" n5:SelectedBkg="@drawable/tab_personal_sel" n5:Text="tab_local" n5:TextNormalColor="@color/menu_text_color" n5:TextSelectedColor="@color/menu_text_color" n5:TextSize="@dimen/menu_text_size" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        </RadioGroup>
+    </RelativeLayout>
+    <FrameLayout n1:id="@id/fullLayoutReplace" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</RelativeLayout>

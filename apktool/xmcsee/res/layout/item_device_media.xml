@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/rl_push_result_layout" n1:background="@android:color/transparent" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/iv_push_result_checked" n1:layout_width="100.0dip" n1:layout_height="70.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="12.0dip" n1:layout_marginBottom="12.0dip" n1:src="@color/thumbnail_bg_color" n1:scaleType="fitCenter" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="10.0dip" n1:layout_toRightOf="@id/iv_push_result_checked" n1:layout_centerVertical="true">
+        <TextView n1:textSize="16.0sp" n1:textColor="#ff888888" n1:gravity="center_vertical" n1:id="@id/tv_push_result_status" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="0.0dip" n1:text="Start" n1:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView n1:textSize="18.0sp" n1:textColor="#ff606060" n1:gravity="center_vertical" n1:id="@id/tv_push_result_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:text="20:23:21" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    <TextView n1:id="@id/tv_push_result_id" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</RelativeLayout>

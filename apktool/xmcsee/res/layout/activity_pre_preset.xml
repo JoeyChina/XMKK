@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/pre_preset_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:TitleText="config_preset" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/default_normal_text_color" n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="preset_pre_tips" n1:layout_centerInParent="true" />
+    <com.ui.controls.BtnColorBK n1:textSize="@dimen/btn_text" n1:textColor="@color/white" n1:id="@id/confirm" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="50.0dip" n1:layout_marginRight="50.0dip" n1:layout_marginBottom="30.0dip" n1:text="confirm" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" n1:textAllCaps="false" n3:corners="@dimen/btn_corners" n3:no_press_solid="@color/theme_color" n3:pressed_solid="@color/light_theme_color" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

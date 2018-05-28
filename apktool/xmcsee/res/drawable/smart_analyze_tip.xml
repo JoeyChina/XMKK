@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape>
+    <corners n1:radius="15.0dip"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <stroke n2:width="1.0dip"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <solid n3:color="@color/smart_analyze_dialog_bg"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</shape>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:gravity="center_vertical" n1:id="@id/layoutRoot" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minWidth="60.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="15.0dip" n1:layout_alignParentLeft="true">
+        <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/login_page_color" n1:id="@id/date_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/hint_color" n1:id="@id/content_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView n1:textSize="@dimen/small_text_size" n1:textColor="@color/hint_color" n1:id="@id/time_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="15.0dip" n1:layout_alignParentRight="true" />
+</RelativeLayout>

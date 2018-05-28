@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/layoutRoot" n1:background="@drawable/corners_dlg" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@drawable/gradual_change" n1:padding="8.0dip" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/white" n1:gravity="center_horizontal" n1:id="@id/tips1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="add_smart_btn_success_tips1" />
+        <TextView n1:textSize="@dimen/to_small_text_size" n1:textColor="@color/white" n1:gravity="center_horizontal" n1:id="@id/tips2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="add_smart_btn_success_tips2" />
+    </LinearLayout>
+    <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="40.0dip" n1:src="@drawable/ic_button_description" />
+    <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/theme_color" n1:gravity="center" n1:id="@id/ok_btn" n1:background="@drawable/simple_btn_bg" n1:padding="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0dip" n1:layout_marginRight="30.0dip" n1:layout_marginBottom="10.0dip" n1:text="remind_ok" />
+</LinearLayout>

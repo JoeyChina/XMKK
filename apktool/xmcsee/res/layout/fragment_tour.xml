@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/layoutRoot" n1:background="@color/white_transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="8.0dip" n1:layout_centerVertical="true">
+        <TextView n1:textSize="@dimen/big_text_size" n1:typeface="serif" n1:textColor="@color/tour_gray2red" n1:gravity="center" n1:id="@id/tour_point_1" n1:background="@drawable/tour_gray2red" n1:clickable="true" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_margin="8.0dip" n1:text="1" />
+        <TextView n1:textSize="@dimen/big_text_size" n1:typeface="serif" n1:textColor="@color/tour_gray2red" n1:gravity="center" n1:id="@id/tour_point_2" n1:background="@drawable/tour_gray2red" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_margin="8.0dip" n1:text="2" />
+        <TextView n1:textSize="@dimen/big_text_size" n1:typeface="serif" n1:textColor="@color/tour_gray2red" n1:gravity="center" n1:id="@id/tour_point_3" n1:background="@drawable/tour_gray2red" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_margin="8.0dip" n1:text="3" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="8.0dip">
+        <TextView n1:enabled="false" n1:textSize="@dimen/middle_text_size" n1:textColor="@color/tour_red2white" n1:gravity="center" n1:id="@id/tour_start" n1:background="@drawable/tour_white2red2gray" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="8.0dip" n1:text="start_tour" />
+        <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/tour_red2white" n1:gravity="center" n1:id="@id/tour_start_360" n1:background="@drawable/tour_white2red2gray" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="8.0dip" n1:text="360_tour" />
+    </LinearLayout>
+</LinearLayout>

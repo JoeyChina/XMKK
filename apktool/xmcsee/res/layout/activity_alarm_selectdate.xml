@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/taskdate_rl" n1:background="#80000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/rl_week" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="420.0dip" n1:layout_alignParentBottom="true">
+        <ListView n1:id="@id/lv_week" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:divider="#ffefeff5" n1:dividerHeight="1.0px" n1:layout_above="@id/rl_control" n1:footerDividersEnabled="true" />
+        <RelativeLayout n1:id="@id/rl_control" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n1:layout_alignParentBottom="true">
+            <TextView n1:id="@id/split" n1:background="#ffefeff5" n1:layout_width="0.5dip" n1:layout_height="20.0dip" n1:layout_centerInParent="true" />
+            <TextView n1:textSize="16.0sp" n1:textColor="@color/login_page_color" n1:gravity="center" n1:id="@id/tv_cancel" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/Cancel" n1:layout_toLeftOf="@id/split" />
+            <TextView n1:textSize="16.0sp" n1:textColor="@color/theme_color" n1:gravity="center" n1:id="@id/tv_sure" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/Ok" n1:layout_toRightOf="@id/split" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

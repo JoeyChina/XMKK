@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@drawable/corner_white_bg" n1:layout_width="300.0dip" n1:layout_height="300.0dip" n1:layout_centerInParent="true">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n1:layout_marginTop="10.0dip">
+            <View n1:background="#fff75b47" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="10.0dip" n1:layout_toLeftOf="@id/title" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="18.0sp" n1:textColor="@color/red" n1:layout_gravity="center" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="restore_settings" n1:layout_centerInParent="true" />
+            <View n1:background="#fff75b47" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="20.0dip" n1:layout_toRightOf="@id/title" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView n1:textSize="14.0sp" n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="5.0dip" n1:text="device_is_restarting" n1:maxLines="1" />
+        <com.xworld.widget.CountDownProgress n1:id="@id/progress_view" n1:padding="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:default_circle_radius="80.0dip" n2:default_circle_stroke_width="6.0dip" n2:progress_width="7.0dip" n2:text_color="@color/whitebg_text" n2:text_size="65.0dip" n2:text_size_below="20.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</RelativeLayout>

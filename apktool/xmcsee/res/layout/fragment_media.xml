@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/media_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:RightBtn_Nor="@drawable/icon_edit" n2:RightBtn_Sel="@drawable/icon_edit" n2:TitleText="tab_images" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n1:id="@id/rlMediaTitle" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height">
+        <LinearLayout n1:background="@drawable/bg_media_tab_layout" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+            <TextView n1:textSize="@dimen/item_title_text" n1:textColor="@color/theme_color" n1:id="@id/txtPictureTab" n1:background="@drawable/bg_picture_tab_selected" n1:paddingLeft="@dimen/big_spacing" n1:paddingTop="5.0dip" n1:paddingRight="@dimen/big_spacing" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Pictures" />
+            <TextView n1:textSize="@dimen/item_title_text" n1:textColor="@color/white" n1:id="@id/txtRecordTab" n1:paddingLeft="@dimen/big_spacing" n1:paddingTop="5.0dip" n1:paddingRight="@dimen/big_spacing" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Records" />
+        </LinearLayout>
+        <ImageView n1:id="@id/imgEditMedia" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/item_margin" n1:src="@drawable/icon_edit" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ViewFlipper n1:id="@id/viewflipper" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="1.0dip" n1:layout_marginRight="1.0dip" n1:layout_below="@id/rlMediaTitle">
+        <ListView n1:id="@id/lvPicture" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <ListView n1:id="@id/lvRecord" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </ViewFlipper>
+    <ImageView n1:id="@id/imgMediaEmpty" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/tip_local_media_empty" n1:layout_centerInParent="true" />
+    <include n1:id="@id/media_edit_bottom" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/bottom_menu_height" n1:layout_alignParentBottom="true" layout="@layout/menu_bottom_common" />
+</RelativeLayout>

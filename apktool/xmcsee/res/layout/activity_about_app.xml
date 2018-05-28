@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/about_app_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:TitleText="about_app" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/about_app_title">
+        <RelativeLayout n1:gravity="center_horizontal" n1:paddingTop="25.0dip" n1:paddingBottom="25.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:id="@id/xm_logo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/logo" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/login_page_color" n1:id="@id/version" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/xm_logo" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.ui.controls.ListSelectItem n1:id="@id/check_update" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n3:Cap="already_latest" n3:CapColor="@color/theme_color" n3:ItemTitleColor="@color/login_page_color" n3:Title="check_update" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.ui.controls.ListSelectItem n1:id="@id/img_path" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:Cap="clear_cache" n4:CapColor="@color/theme_color" n4:ItemTitleColor="@color/login_page_color" n4:LineColor="@color/line_color" n4:Title="img_path" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.ui.controls.ListSelectItem n1:id="@id/video_path" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n5:Cap="clear_cache" n5:CapColor="@color/theme_color" n5:ItemTitleColor="@color/login_page_color" n5:LineColor="@color/line_color" n5:Title="video_path" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:layout_alignParentBottom="true">
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/llAboutUS" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip">
+            <TextView n1:textSize="15.0sp" n1:textColor="@color/link" n1:id="@id/txtTermsService" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="terms_service" />
+            <View n1:gravity="center_vertical" n1:background="@color/link" n1:layout_width="1.0dip" n1:layout_height="10.0dip" n1:layout_marginLeft="3.0dip" n1:layout_marginRight="3.0dip" />
+            <TextView n1:textSize="15.0sp" n1:textColor="@color/link" n1:id="@id/txtOfficialWeb" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="official_website" />
+            <View n1:gravity="center_vertical" n1:background="@color/link" n1:layout_width="1.0dip" n1:layout_height="10.0dip" n1:layout_marginLeft="3.0dip" n1:layout_marginRight="3.0dip" />
+            <TextView n1:textSize="15.0sp" n1:textColor="@color/link" n1:id="@id/txtServiceHotline" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="service_hotline" />
+        </LinearLayout>
+        <TextView n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:gravity="center_horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:layout_marginRight="16.0dip" n1:text="company" />
+    </LinearLayout>
+</RelativeLayout>

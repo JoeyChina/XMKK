@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:id="@id/fish_controls180" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" layout="@layout/include_fish_switch180" />
+    <include n1:id="@id/fish_controls_left" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" layout="@layout/include_fish_switch" />
+</RelativeLayout>

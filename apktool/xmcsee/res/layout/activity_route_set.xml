@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@drawable/add_device_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/route_title" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/visit_back_nor" n2:LeftBtn_Sel="@drawable/visit_back_sel" n2:TitleText="title_router_settings" n2:TitleTextColor="@color/theme_color" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="60.0dip" n1:layout_below="@id/route_title" n1:layout_centerHorizontal="true">
+        <TextView n1:textSize="@dimen/button_text_size" n1:textColor="@color/login_page_color" n1:id="@id/input_psd_tip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="40.0dip" n1:layout_marginBottom="8.0dip" n1:text="input_psd" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/ll" n1:background="@drawable/et_shape" n1:padding="16.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:layout_below="@id/input_psd_tip">
+            <RelativeLayout n1:gravity="center_vertical" n1:layout_gravity="center_vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="@dimen/small_text_size" n1:textColor="@color/login_page_color" n1:gravity="center_vertical" n1:id="@id/wifi" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="xmjp" n1:drawableLeft="@drawable/icon_wifi" n1:drawablePadding="5.0dip" />
+                <ImageView n1:id="@id/wifi_drop" n1:background="@drawable/wifi_drop" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginTop="16.0dip" n1:layout_marginBottom="16.0dip" />
+            <RelativeLayout n1:gravity="center_vertical" n1:layout_gravity="center_vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <EditText n1:textSize="@dimen/small_text_size" n1:textColor="@color/login_page_color" n1:textColorHint="@color/hint_color" n1:id="@id/wifi_psd" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="password" n1:maxLength="32" n1:drawableLeft="@drawable/icon_lock" n1:drawablePadding="5.0dip" n1:inputType="textPassword" />
+                <com.ui.controls.ButtonCheck n1:id="@id/psd_show" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n3:NormalBkg="@drawable/icon_hide_nor" n3:SelectedBkg="@drawable/icon_hide_sel" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView n1:textSize="@dimen/small_text_size" n1:id="@id/tv_tip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginRight="26.0dip" n1:text="connect_wifi_tip" n1:layout_below="@id/ll" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="bottom" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <TextView n1:textSize="@dimen/small_text_size" n1:textColor="@color/login_page_color" n1:layout_gravity="center_horizontal" n1:id="@id/connect_que" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="18.0dip" n1:text="connect_wifi_que" n1:drawableLeft="@drawable/warning" n1:drawablePadding="5.0dip" />
+        <com.ui.controls.BtnColorBK n1:textSize="@dimen/btn_text" n1:textColor="@color/white" n1:id="@id/btn_route_set" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:layout_marginRight="16.0dip" n1:layout_marginBottom="30.0dip" n1:text="confirm" n1:textAllCaps="false" n4:corners="@dimen/btn_corners" n4:no_press_solid="@color/theme_color" n4:pressed_solid="@color/deep_theme_color" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</RelativeLayout>

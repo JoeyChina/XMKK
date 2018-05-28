@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@drawable/home_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerHorizontal="true">
+        <com.xworld.widget.LogoAnimationView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="60.0dip" n1:layout_centerHorizontal="true" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+            <com.ui.controls.BtnColorBK n1:textSize="@dimen/btn_text" n1:textColor="@color/white" n1:id="@id/btn_login" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:layout_marginRight="16.0dip" n1:layout_marginBottom="16.0dip" n1:text="login" n1:textAllCaps="false" n2:corners="@dimen/btn_corners" n2:no_press_solid="@color/theme_color" n2:pressed_solid="@color/light_theme_color" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <Button n1:textSize="@dimen/btn_text" n1:textColor="@color/login_page_color" n1:id="@id/btn_visit" n1:background="@drawable/bg_corners_btn" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:layout_marginRight="16.0dip" n1:layout_marginBottom="38.0dip" n1:text="login_temp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

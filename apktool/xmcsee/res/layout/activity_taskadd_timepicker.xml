@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/buttom_timepick" n1:background="#88000000" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/timepicker_rl" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="245.0dip" n1:layout_alignParentBottom="true">
+        <RelativeLayout n1:orientation="vertical" n1:id="@id/numpicker_rl" n1:layout_width="fill_parent" n1:layout_height="200.0dip" n1:layout_above="@id/split">
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="2.0" n1:layout_alignTop="@id/numerPicker_ll" n1:layout_alignParentBottom="true">
+                <TextView n1:textColor="@color/theme_color" n1:gravity="center|right|top" n1:layout_gravity="center_vertical" n1:id="@id/hour" n1:paddingRight="40.0dip" n1:paddingBottom="20.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/Hour" n1:layout_weight="1.0" />
+                <TextView n1:textColor="@color/theme_color" n1:gravity="center|right|top" n1:layout_gravity="center_vertical" n1:id="@id/min" n1:paddingRight="40.0dip" n1:paddingBottom="20.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/Minute" n1:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout n1:id="@id/numerPicker_ll" n1:paddingTop="10.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="2.0" n1:layout_alignParentBottom="true">
+                <View n1:layout_gravity="center_vertical" n1:background="@color/theme_color" n1:layout_width="4.0dip" n1:layout_height="50.0dip" />
+                <com.ui.controls.NumberPicker n1:id="@id/numpicker_hour" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+                <com.ui.controls.NumberPicker n1:id="@id/numpicker_min" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView n1:id="@id/split" n1:background="#ffefeff5" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_above="@id/control_ll" />
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/control_ll" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n1:weightSum="2.0" n1:layout_alignParentBottom="true">
+            <TextView n1:textSize="16.0sp" n1:textColor="@color/login_page_color" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/tv_cancel" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="@string/Cancel" n1:layout_weight="0.99" />
+            <TextView n1:textSize="16.0sp" n1:textColor="@color/theme_color" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/tv_sure" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="@string/Ok" n1:layout_weight="0.99" />
+        </LinearLayout>
+        <TextView n1:background="#ffefeff5" n1:layout_width="1.0px" n1:layout_height="200.0dip" n1:layout_alignTop="@id/numpicker_rl" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

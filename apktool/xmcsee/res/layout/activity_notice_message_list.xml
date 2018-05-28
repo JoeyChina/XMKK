@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/tbNoticeTitle" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:TitleText="notice_message" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <android.support.v7.widget.RecyclerView n1:id="@id/rvNoticeList" n1:paddingLeft="@dimen/item_margin" n1:paddingRight="@dimen/item_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/tbNoticeTitle" />
+    <ImageView n1:id="@id/imgNoticeListEmpty" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/tip_notice_list_empty" n1:layout_centerInParent="true" />
+    <FrameLayout n1:id="@id/replaceLayout" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</RelativeLayout>

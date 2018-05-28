@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/layoutRoot" n1:background="@drawable/corners_dlg" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@drawable/gradual_change" n1:padding="12.0dip" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="detection_rename" />
+        </LinearLayout>
+        <ImageView n1:layout_gravity="end|center|top" n1:id="@id/close" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/delete_dev" />
+    </FrameLayout>
+    <EditText n1:textSize="@dimen/small_text_size" n1:gravity="center" n1:id="@id/rename_ed" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="16.0dip" n1:layout_marginBottom="2.0dip" n1:maxLength="32" />
+    <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+    <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/theme_color" n1:gravity="center" n1:id="@id/ok" n1:padding="16.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="confirm" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/black" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/layout_wnd" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.xworld.widget.MultiWinLayout n1:id="@id/mywndviews" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:NormalFrameBg="@drawable/wnd_margin_normal" n2:SelectedFrameBg="@drawable/wnd_margin_selected" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.ui.controls.XTitleBar n1:layout_gravity="top" n1:id="@id/local_video_title" n1:background="@color/monitor_top" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n3:LeftBtn_Nor="@drawable/back_nor" n3:LeftBtn_Sel="@drawable/back_sel" n3:LeftText="" n3:LeftTextColor="@color/white" n3:TitleTextColor="@color/white" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <include n1:layout_gravity="bottom" n1:id="@id/local_video_bottom_sb" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" layout="@layout/include_bottom_seekbar" />
+    </FrameLayout>
+</RelativeLayout>

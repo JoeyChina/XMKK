@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@drawable/quick_config_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.ui.controls.XTitleBar n1:id="@id/quick_page_title" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/visit_back_nor" n2:LeftBtn_Sel="@drawable/visit_back_sel" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:textSize="15.0sp" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/quickConfigTextView" n1:paddingTop="15.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Quick_config_tip" />
+        <RelativeLayout n1:id="@id/content" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+            <com.ui.controls.rectloadingview.RectLoadingView n1:id="@id/rect_loading" n1:layout_width="70.0dip" n1:layout_height="wrap_content" n1:layout_centerInParent="true" n3:color="@color/theme_color" n3:count="6" n3:duartion="600" n3:maxRectHeight="40.0dip" n3:minRectHeight="40.0dip" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:src="@drawable/ic_dev_damai" n1:layout_toLeftOf="@id/rect_loading" n1:layout_centerVertical="true" />
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:src="@drawable/ic_wifi" n1:layout_toRightOf="@id/rect_loading" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/theme_color" n1:gravity="center" n1:id="@id/tvSecond" n1:paddingLeft="@dimen/item_margin" n1:paddingRight="@dimen/item_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="70.0dip" n1:text="quick_config_cut_down" n1:layout_above="@id/rect_loading" n1:layout_centerHorizontal="true" />
+            <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/main_bottom_color" n1:gravity="center" n1:id="@id/tv_description" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip" n1:text="quick_set_tip" n1:layout_above="@id/tvSecond" n1:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="25.0dip">
+            <com.ui.controls.BtnColorBK n1:textSize="@dimen/middle_text_size" n1:textColor="@color/white" n1:layout_gravity="bottom" n1:id="@id/quick_config_result_cancel" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/item_margin" n1:layout_marginRight="@dimen/item_margin" n1:layout_marginBottom="28.0dip" n1:text="cancel" n1:textAllCaps="false" n4:corners="@dimen/btn_corners" n4:no_press_solid="@color/theme_color" n4:pressed_solid="@color/light_theme_color" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            <com.ui.controls.BtnColorBK n1:textSize="@dimen/middle_text_size" n1:textColor="@color/white" n1:layout_gravity="bottom" n1:id="@id/btnRetryConfig" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/item_margin" n1:layout_marginRight="@dimen/item_margin" n1:layout_marginBottom="28.0dip" n1:text="retry" n1:textAllCaps="false" n5:corners="@dimen/btn_corners" n5:no_press_solid="@color/theme_color" n5:pressed_solid="@color/light_theme_color" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+            <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/white" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/square_code_button" n1:background="@drawable/button_selector" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="18.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="18.0dip" n1:minHeight="40.0dip" n1:text="code_Config_WiFi" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout n1:id="@id/square_code_content" n1:background="@color/cover_gray" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <RelativeLayout n1:background="@android:color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+            <ImageView n1:id="@id/square_code" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

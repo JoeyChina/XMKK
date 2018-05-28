@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/alarm_mess_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightText="clear_alarm_mess" n2:RightTextColor="@color/white" n2:TitleText="main_dev_mess" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ListView n1:id="@id/alarm_mess" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/alarm_mess_title" />
+    <RelativeLayout n1:id="@id/rlAlarmMessageEmpty" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+        <ImageView n1:id="@id/imgMessageEmpty" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/tip_alarm_message_empty" />
+        <ImageView n1:id="@id/imgMessageEmptyText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/tip_alarm_message_empty_text" n1:layout_below="@id/imgMessageEmpty" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

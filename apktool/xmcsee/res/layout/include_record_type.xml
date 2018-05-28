@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/remoteplay_interval_iv" n1:background="@drawable/remoteplay_hrs" n1:padding="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/remoteplay_record_type_color" n1:padding="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_toLeftOf="@id/remoteplay_interval_iv">
+        <View n1:background="@color/record_normal_color" n1:layout_width="5.0dip" n1:layout_height="5.0dip" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="5.0dip" n1:text="record_regular" />
+        <View n1:background="@color/record_alarm_color" n1:layout_width="5.0dip" n1:layout_height="5.0dip" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="5.0dip" n1:text="record_alarm" />
+        <View n1:background="@color/record_intelligent_analysis_color" n1:layout_width="5.0dip" n1:layout_height="5.0dip" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="5.0dip" n1:text="record_intelligent_analysis" />
+    </LinearLayout>
+</RelativeLayout>

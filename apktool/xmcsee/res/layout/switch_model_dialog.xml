@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/control_light" n1:background="@color/white" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_gravity="center" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                <RadioGroup n1:orientation="horizontal" n1:id="@id/switch_radiogroup" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+                    <RadioButton n1:textColor="@color/color_radiobutton_selector" n1:gravity="center" n1:id="@id/switch_open" n1:background="@drawable/select_radiobutton_left" n1:paddingLeft="10.0dip" n1:paddingTop="5.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:button="@null" n1:text="open" />
+                    <RadioButton n1:textColor="@color/color_radiobutton_selector" n1:gravity="center" n1:id="@id/switch_close" n1:background="@drawable/select_radiobutton_mid" n1:paddingLeft="10.0dip" n1:paddingTop="5.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:button="@null" n1:text="close" />
+                    <RadioButton n1:textColor="@color/color_radiobutton_selector" n1:gravity="center" n1:id="@id/switch_timing" n1:background="@drawable/select_radiobutton_right" n1:paddingLeft="10.0dip" n1:paddingTop="5.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:button="@null" n1:text="timing" />
+                </RadioGroup>
+                <TextView n1:textColor="@color/black" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:text="bulb_switch" n1:singleLine="true" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                <TextView n1:background="@color/bg_list1" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/timing_switch_rl" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                <com.ui.controls.ButtonCheck n1:orientation="horizontal" n1:id="@id/timing_switch" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n2:NormalBkg="@drawable/icon_off" n2:SelectedBkg="@drawable/icon_open" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textColor="@color/black" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:text="timing_switch" n1:singleLine="true" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                <TextView n1:background="@color/bg_list1" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/setting_open_time_rl" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:id="@id/open_setting_text" n1:paddingLeft="20.0dip" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:text="06:00" n1:drawableRight="@drawable/icon_next" n1:drawablePadding="5.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                <TextView n1:textColor="@color/black" n1:id="@id/open_setting" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:text="open_time" n1:layout_toLeftOf="@id/open_setting_text" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                <TextView n1:background="@color/bg_list1" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/setting_close_time_rl" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:id="@id/close_setting_text" n1:paddingLeft="20.0dip" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:text="17:00" n1:drawableRight="@drawable/icon_next" n1:drawablePadding="5.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                <TextView n1:textColor="@color/black" n1:id="@id/close_setting" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:text="close_time" n1:layout_toLeftOf="@id/close_setting_text" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                <TextView n1:background="@color/bg_list1" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/show_control_light" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                <TextView n1:textColor="@color/black" n1:gravity="center" n1:id="@id/show_light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="10.0dip" n1:text="adjust_brightness" n1:singleLine="true" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                <RelativeLayout n1:id="@id/seekbar_light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/show_light" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+                    <ImageView n1:id="@id/light_down" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/light_down" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                    <SeekBar n1:id="@id/change_light" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:max="100" n1:layout_toLeftOf="@id/light_up" n1:layout_toRightOf="@id/light_down" n1:layout_centerInParent="true" style="@style/SeekBar_Normal" />
+                    <ImageView n1:id="@id/light_up" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:src="@drawable/light_up" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView n1:background="@color/bg_list1" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                <Spinner n1:textColor="@color/login_page_color" n1:gravity="center" n1:id="@id/setting_expert_color" n1:background="@drawable/spinner_bg" n1:padding="0.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="15.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                <TextView n1:textColor="@color/black" n1:id="@id/set_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:text="Video_Model" n1:layout_toLeftOf="@id/setting_expert_color" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                <TextView n1:background="@color/bg_list1" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

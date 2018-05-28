@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.xworld.widget.EnlargeDistanceSwipeRefreshLayout n1:id="@id/swip" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <WebView n1:id="@id/webview" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </com.xworld.widget.EnlargeDistanceSwipeRefreshLayout>
+    <WebView n1:id="@id/login_webview" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <include n1:id="@id/activity_web_share" layout="@layout/include_web_share" />
+</RelativeLayout>

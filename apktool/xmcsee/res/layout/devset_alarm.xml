@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/alarm_set_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightText="alarm_set_save" n2:RightTextColor="@color/white" n2:TitleText="alarm_set" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/alarm_set_title">
+        <com.ui.controls.ListSelectItem n1:id="@id/set_open" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:ImageRight1="@drawable/icon_off" n3:ItemTitleColor="@color/login_page_color" n3:Title="set_open" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+        <com.ui.controls.ListSelectItem n1:id="@id/set_edit" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:ImageRight1="@drawable/pop_nor" n4:ItemTitleColor="@color/login_page_color" n4:Title="set_edit" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+        <com.ui.controls.ListSelectItem n1:id="@id/set_week" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n5:Cap="小雨点" n5:CapColor="@color/login_page_color" n5:ImageRight1="@drawable/icon_next" n5:ItemTitleColor="@color/login_page_color" n5:Title="set_week" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+        <com.ui.controls.ListSelectItem n1:id="@id/set_start" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n6:Cap="小雨点" n6:CapColor="@color/login_page_color" n6:ImageRight1="@drawable/icon_next" n6:ItemTitleColor="@color/login_page_color" n6:Title="set_start" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+        <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+        <com.ui.controls.ListSelectItem n1:id="@id/set_finish" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n7:Cap="小雨点" n7:CapColor="@color/login_page_color" n7:ImageRight1="@drawable/icon_next" n7:ItemTitleColor="@color/login_page_color" n7:Title="set_finish" xmlns:n7="http://schemas.android.com/apk/res-auto" />
+        <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+        <com.ui.controls.ListSelectItem n1:id="@id/set_repeat" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n8:ImageRight1="@drawable/icon_off" n8:ItemTitleColor="@color/login_page_color" n8:Title="set_repeat" xmlns:n8="http://schemas.android.com/apk/res-auto" />
+        <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+        <com.ui.controls.ListSelectItem n1:id="@id/set_tip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n9:Cap="小雨点" n9:CapColor="@color/login_page_color" n9:ImageRight1="@drawable/icon_next" n9:ItemTitleColor="@color/login_page_color" n9:LineColor="@color/line_color" n9:Title="set_tip" xmlns:n9="http://schemas.android.com/apk/res-auto" />
+        <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+    </LinearLayout>
+</RelativeLayout>

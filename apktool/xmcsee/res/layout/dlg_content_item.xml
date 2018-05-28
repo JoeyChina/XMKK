@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="top" n1:orientation="horizontal" n1:paddingTop="16.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/dlg_content_tip" n1:background="@drawable/point" n1:layout_width="5.0dip" n1:layout_height="5.0dip" n1:layout_marginTop="4.0dip" n1:layout_marginRight="16.0dip" />
+    <TextView n1:textColor="@color/default_normal_text_color" n1:gravity="top" n1:id="@id/dlg_content_item_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:lineSpacingMultiplier="1.5" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/xm_ui_lib_filemanager_rl" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height">
+        <ImageView n1:id="@id/xm_ui_lib_back" n1:background="@null" n1:paddingLeft="12.0dip" n1:paddingRight="12.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/back_dark_gray_sel" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="17.0sp" n1:textColor="@color/title_text_bg_gray" n1:id="@id/savapath" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View n1:id="@id/view" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="20.0dip" />
+    <com.xworld.widget.ScrollForeverTextView n1:ellipsize="marquee" n1:gravity="center" n1:id="@id/viewpath" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="40.0dip" n1:layout_marginLeft="10.0dip" n1:maxLines="1" n1:layout_below="@id/xm_ui_lib_filemanager_rl" n1:layout_centerVertical="true" />
+    <RelativeLayout n1:orientation="horizontal" n1:id="@id/default_Path_rl" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+        <TextView n1:textSize="15.0dip" n1:textColor="@color/xm_dlg_color_4" n1:id="@id/default_path_txt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="12.0dip" n1:text="Default_path" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+        <TextView n1:textColor="@color/whitebg_text" n1:gravity="center" n1:id="@id/default_path" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="8.0dip" n1:layout_toLeftOf="@id/right_img" n1:layout_toRightOf="@id/default_path_txt" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/right_img" n1:paddingRight="12.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/right_img" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <RelativeLayout n1:orientation="horizontal" n1:id="@id/change_Path_rl" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+        <TextView n1:textSize="15.0dip" n1:textColor="@color/xm_dlg_color_4" n1:id="@id/change_path_txt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="12.0dip" n1:text="Change_path" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+        <TextView n1:textColor="@color/whitebg_text" n1:gravity="center" n1:id="@id/change_path" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="6.0dip" n1:layout_toLeftOf="@id/change_path_img" n1:layout_toRightOf="@id/change_path_txt" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/change_path_img" n1:paddingRight="12.0dip" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_arrows_thin" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <TextView n1:textSize="12.0dip" n1:textColor="@color/whitebg_text" n1:id="@id/prompt" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="12.0dip" n1:layout_marginTop="15.0dip" n1:layout_marginRight="15.0dip" />
+    <ListView n1:id="@android:id/list" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:drawSelectorOnTop="false" n1:layout_below="@id/prompt" />
+    <RelativeLayout n1:id="@id/emptyRl" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/prompt">
+        <ImageView n1:id="@id/emptyImg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/image_empty" n1:scaleType="center" n1:layout_centerInParent="true" />
+        <TextView n1:textColor="@color/whitebg_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Folder_is_empty" n1:layout_below="@id/emptyImg" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

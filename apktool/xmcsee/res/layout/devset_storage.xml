@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/storage_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:TitleText="storage_manage" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/storage_title">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <RelativeLayout n1:background="@color/theme_color" n1:padding="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.xworld.widget.WaveView n1:id="@id/wave" n1:layout_width="150.0dip" n1:layout_height="150.0dip" n1:layout_centerHorizontal="true" />
+                <TextView n1:textSize="15.0sp" n1:textColor="@color/white" n1:id="@id/remain" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="remain" n1:layout_alignParentRight="true" />
+                <TextView n1:textSize="15.0sp" n1:textColor="@color/white" n1:id="@id/consume" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="15.0dip" n1:text="consume" n1:layout_alignBottom="@id/wave" n1:layout_alignParentRight="true" />
+                <TextView n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/no_sd_card" n1:background="@color/transparent" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="No_SDcard" n1:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout n1:orientation="horizontal" n1:background="@color/white" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                <TextView n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:layout_gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="sto_capacity" n1:drawableLeft="@drawable/dev_setting_total" n1:drawablePadding="5.0dip" />
+                <TextView n1:textColor="@color/hint_color" n1:gravity="center|right" n1:id="@id/total_size" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="18.0dip" n1:layout_marginRight="18.0dip" />
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/video_size_ll" n1:background="@color/white" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                <TextView n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:layout_gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="28.0dip" n1:text="sto_video_part" />
+                <TextView n1:textColor="@color/hint_color" n1:gravity="center|right" n1:id="@id/video_size" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="18.0dip" n1:layout_marginRight="18.0dip" />
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/picture_size_ll" n1:background="@color/white" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                <TextView n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:layout_gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="28.0dip" n1:text="sto_img_part" />
+                <TextView n1:textColor="@color/hint_color" n1:gravity="center|right" n1:id="@id/picture_size" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="18.0dip" n1:layout_marginRight="18.0dip" />
+            <LinearLayout n1:orientation="horizontal" n1:background="@color/white" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                <TextView n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:layout_gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="sto_remain_capacity" n1:drawableLeft="@drawable/dev_setting_surplus" n1:drawablePadding="5.0dip" />
+                <TextView n1:textColor="@color/hint_color" n1:gravity="center|right" n1:id="@id/remain_size" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginLeft="18.0dip" n1:layout_marginRight="18.0dip" />
+            <LinearLayout n1:orientation="horizontal" n1:background="@color/white" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                <TextView n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:layout_gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="sto_video_full" n1:drawableLeft="@drawable/dev_setting_hdd_full" n1:drawablePadding="5.0dip" />
+                <RadioGroup n1:gravity="center|right" n1:orientation="horizontal" n1:id="@id/hdd_rg" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <RadioButton n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:id="@id/stop_write_rb" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="8.0dip" n1:button="@drawable/radio_btn_point" n1:text="sto_video_stop" n1:drawablePadding="5.0dip" />
+                    <RadioButton n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:id="@id/over_write_rb" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:button="@drawable/radio_btn_point" n1:text="sto_video_cir" n1:drawablePadding="5.0dip" />
+                </RadioGroup>
+            </LinearLayout>
+            <Button n1:textSize="@dimen/btn_text" n1:textColor="@color/login_page_color" n1:id="@id/sto_fat" n1:background="@drawable/bg_corners_btn" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:layout_marginTop="28.0dip" n1:layout_marginRight="16.0dip" n1:layout_marginBottom="10.0dip" n1:text="sto_fat" n1:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

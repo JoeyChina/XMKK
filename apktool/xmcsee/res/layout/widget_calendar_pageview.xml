@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/widget_calendar_card_weekdays" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="3.0dip">
+        <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Monday" n1:layout_weight="1.0" />
+        <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Tuesday" n1:layout_weight="1.0" />
+        <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Wednesday" n1:layout_weight="1.0" />
+        <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Thursday" n1:layout_weight="1.0" />
+        <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Friday" n1:layout_weight="1.0" />
+        <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Saturday" n1:layout_weight="1.0" />
+        <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Sunday" n1:layout_weight="1.0" />
+    </LinearLayout>
+    <ScrollView n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:fillViewport="true">
+        <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <com.xworld.calendarpageview.CalendarCardView n1:id="@id/widget_calendar_pageview_card" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</merge>

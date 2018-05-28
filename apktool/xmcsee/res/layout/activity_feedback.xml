@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/feedback_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:TitleText="feedback_title" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/feedback_title">
+        <LinearLayout n1:orientation="vertical" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip">
+            <TextView n1:textColor="@color/login_page_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="freed_back_content" />
+            <EditText n1:textSize="15.0sp" n1:textColorHint="@color/hint_color" n1:gravity="start" n1:id="@id/feedback_information" n1:background="@color/white" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="200.0dip" n1:layout_marginTop="10.0dip" n1:hint="feedback_information" />
+            <TextView n1:textColor="@color/login_page_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="freed_back_contact_information" />
+            <RelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginTop="10.0dip">
+                <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:id="@id/txtEmail" n1:paddingLeft="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="freed_back_email" n1:layout_centerVertical="true" />
+                <EditText n1:textSize="14.0sp" n1:textColorHint="@color/hint_color" n1:id="@id/edtEmail" n1:background="@color/white" n1:paddingLeft="5.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="feedback_link_information" n1:layout_toRightOf="@id/txtEmail" />
+            </RelativeLayout>
+            <RelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginTop="5.0dip">
+                <TextView n1:textColor="@color/login_page_color" n1:id="@id/txtOther" n1:paddingLeft="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="freed_back_phone" n1:layout_centerVertical="true" />
+                <EditText n1:textSize="14.0sp" n1:textColorHint="@color/hint_color" n1:id="@id/edtOther" n1:background="@color/white" n1:paddingLeft="5.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="feedback_link_information" n1:layout_toRightOf="@id/txtOther" />
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/feedback_Checkbox_rl" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip">
+                <CheckBox n1:id="@id/feedback_Checkbox" n1:background="@drawable/feedback_selected" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checked="true" n1:button="@null" n1:layout_centerVertical="true" />
+                <TextView n1:textColor="@color/login_page_color" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="feedback_send_log" n1:layout_toRightOf="@id/feedback_Checkbox" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView n1:textSize="12.0sp" n1:textColor="@color/red" n1:ellipsize="marquee" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="notification_notes" n1:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.ui.controls.BtnColorBK n1:textSize="@dimen/middle_text_size" n1:textColor="@color/white" n1:id="@id/feedback_send_message" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:layout_marginRight="25.0dip" n1:layout_marginBottom="20.0dip" n1:text="feedback_send" n1:layout_alignParentBottom="true" n1:textAllCaps="false" n3:corners="@dimen/btn_corners" n3:no_press_solid="@color/theme_color" n3:pressed_solid="@color/light_theme_color" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/preset_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightBtn_Nor="@drawable/help_ico" n2:RightBtn_Sel="@drawable/help_ico" n2:TitleText="config_preset" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n1:id="@id/video_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <ImageView n1:id="@id/ptz_up_arrow" n1:background="@drawable/ptz_up_arrow" n1:visibility="gone" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginTop="15.0dip" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" />
+        <ImageView n1:id="@id/ptz_right_arrow" n1:background="@drawable/ptz_up_arrow" n1:visibility="gone" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginRight="15.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:rotation="90.0" />
+        <ImageView n1:id="@id/ptz_down_arrow" n1:background="@drawable/ptz_up_arrow" n1:visibility="gone" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginBottom="15.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" n1:rotation="180.0" />
+        <ImageView n1:id="@id/ptz_left_arrow" n1:background="@drawable/ptz_up_arrow" n1:visibility="gone" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="15.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n1:rotation="270.0" />
+    </RelativeLayout>
+    <TextView n1:textSize="@dimen/small_text_size" n1:textColor="@color/default_selected_text_color" n1:gravity="center_vertical" n1:id="@id/tips" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="preset_tips" n1:drawableLeft="@drawable/tips" n1:drawablePadding="4.0dip" n1:layout_marginStart="10.0dip" n1:layout_marginEnd="10.0dip" />
+    <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/theme_color" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/add_preset" n1:background="@drawable/bg_stroke_red" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:text="add_preset" n1:paddingStart="20.0dip" n1:paddingEnd="20.0dip" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip">
+        <View n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+        <android.support.v4.view.ViewPager n1:id="@id/view_pager" n1:layout_width="fill_parent" n1:layout_height="220.0dip" />
+        <com.xworld.widget.DotView n1:layout_gravity="center" n1:id="@id/dot" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="6.0dip" n3:dot_mode="sticky" n3:max_sticky_length="50.0dip" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</LinearLayout>

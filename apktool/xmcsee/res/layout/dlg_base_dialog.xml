@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout n1:id="@id/layoutRoot" n1:background="@drawable/rounded_corner_dialog" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.Guideline n1:orientation="horizontal" n1:id="@id/glTitleBottom" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:layout_constraintGuide_percent="0.19" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <android.support.constraint.Guideline n1:orientation="horizontal" n1:id="@id/glBottomBtnBottom" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n3:layout_constraintGuide_percent="0.97" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n1:id="@id/rlDialogTitle" n1:layout_width="0.0dip" n1:layout_height="0.0dip" n4:layout_constraintBottom_toTopOf="@id/glTitleBottom" n4:layout_constraintEnd_toEndOf="parent" n4:layout_constraintStart_toStartOf="parent" n4:layout_constraintTop_toTopOf="parent" xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <TextView n1:textSize="@dimen/act_title_text" n1:textColor="@color/theme_color" n1:id="@id/txtDialogTitle" n1:paddingLeft="@dimen/normal_spacing" n1:paddingRight="@dimen/normal_spacing" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Important_Hints" n1:layout_centerInParent="true" />
+        <View n1:id="@id/viewLeft" n1:background="@color/theme_color" n1:paddingLeft="@dimen/small_spacing" n1:paddingRight="@dimen/small_spacing" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_toLeftOf="@id/txtDialogTitle" n1:layout_centerVertical="true" />
+        <View n1:id="@id/viewRight" n1:background="@color/theme_color" n1:paddingLeft="@dimen/small_spacing" n1:paddingRight="@dimen/small_spacing" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_toRightOf="@id/txtDialogTitle" n1:layout_centerVertical="true" />
+        <View n1:id="@id/vTitleLine" n1:background="@color/line_color" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/line_height" n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/llDialogBottom" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:visibility="visible" n1:layout_width="0.0dip" n1:layout_height="@dimen/title_height" n5:layout_constraintBottom_toTopOf="@id/glBottomBtnBottom" n5:layout_constraintEnd_toEndOf="parent" n5:layout_constraintStart_toStartOf="parent" xmlns:n5="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n1:id="@id/llDialogBottomTwo" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <Button n1:textColor="@color/update_cancel" n1:id="@id/btnDialogCancel" n1:background="@drawable/rounded_corner_button_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="3.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="3.0dip" n1:text="click_later" n1:layout_weight="1.0" />
+            <Button n1:textColor="@color/white" n1:id="@id/btnDialogOK" n1:background="@drawable/rounded_corner_button_red" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="3.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="3.0dip" n1:text="click_now" n1:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/llDialogBottomOne" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:weightSum="3.0">
+            <Button n1:textColor="@color/update_cancel" n1:id="@id/btnBottomOne" n1:background="@drawable/rounded_corner_button_white" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginTop="3.0dip" n1:layout_marginBottom="3.0dip" n1:text="cancel" n1:layout_weight="2.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout n1:id="@id/flDialogContent" n1:background="@color/white" n1:paddingLeft="@dimen/small_spacing" n1:paddingRight="@dimen/small_spacing" n1:layout_width="0.0dip" n1:layout_height="0.0dip" n6:layout_constraintBottom_toTopOf="@id/llDialogBottom" n6:layout_constraintEnd_toEndOf="parent" n6:layout_constraintStart_toStartOf="parent" n6:layout_constraintTop_toBottomOf="@id/rlDialogTitle" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</android.support.constraint.ConstraintLayout>

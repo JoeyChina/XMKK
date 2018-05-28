@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+n1:orientation="horizontal" 
+n1:background="@color/white" 
+n1:paddingTop="2.0dip" 
+n1:paddingBottom="2.0dip" 
+n1:layout_width="wrap_content" 
+n1:layout_height="55.0dip" 
+n1:weightSum="5.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.ButtonCheck 
+	n1:id="@id/playback_voice_scr" 
+	n1:layout_width="80.0dip" 
+	n1:layout_height="wrap_content" 
+	n1:layout_weight="1.0" 
+	n2:NormalBkg="@drawable/aud_silent" 
+	n2:SelectedBkg="@drawable/aud_nor" 
+	xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View 
+	n1:layout_gravity="center_vertical" 
+	n1:background="@color/line_color" 
+	n1:layout_width="0.5dip" 
+	n1:layout_height="24.0dip" />
+    <com.ui.controls.ButtonCheck 
+	n1:id="@id/playback_takephoto_scr" 
+	n1:layout_width="80.0dip" 
+	n1:layout_height="wrap_content" 
+	n1:layout_weight="1.0" 
+	n3:NormalBkg="@drawable/shot" 
+	n3:SelectedBkg="@drawable/shot_sel3" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View 
+	n1:layout_gravity="center_vertical" 
+	n1:background="@color/line_color" 
+	n1:layout_width="0.5dip" 
+	n1:layout_height="24.0dip" />
+    <com.ui.controls.ButtonCheck 
+	n1:id="@id/playback_stop_scr" 
+	n1:layout_width="80.0dip" 
+	n1:layout_height="wrap_content" 
+	n1:layout_weight="1.0" 
+	n4:NormalBkg="@drawable/playback_pause" 
+	n4:SelectedBkg="@drawable/playback_play" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View 
+	n1:layout_gravity="center_vertical" 
+	n1:background="@color/line_color" 
+	n1:layout_width="0.5dip" 
+	n1:layout_height="24.0dip" />
+    <LinearLayout 
+	n1:gravity="center" 
+	n1:layout_gravity="center" 
+	n1:layout_width="80.0dip" 
+	n1:layout_height="wrap_content" 
+	n1:layout_weight="1.0">
+        <com.xworld.widget.RingProgressView 
+	n1:textColor="@color/white" 
+	n1:layout_gravity="center" 
+	n1:id="@id/playback_montage_scr" 
+	n1:layout_width="wrap_content" 
+	n1:layout_height="wrap_content" 
+	n1:src="@drawable/record_selector" />
+    </LinearLayout>
+    <View 
+	n1:layout_gravity="center_vertical" 
+	n1:background="@color/line_color" 
+	n1:layout_width="0.5dip" 
+	n1:layout_height="24.0dip" />
+    <com.ui.controls.ButtonCheck 
+	n1:id="@id/playback_scr_scr" 
+	n1:layout_width="80.0dip" 
+	n1:layout_height="wrap_content" 
+	n1:layout_weight="1.0" 
+	n5:NormalBkg="@drawable/scr_actual" 
+	n5:SelectedBkg="@drawable/scr_actual" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

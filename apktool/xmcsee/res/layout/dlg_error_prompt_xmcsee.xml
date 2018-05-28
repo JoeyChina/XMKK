@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:id="@id/layoutRoot" n1:background="#00ffffff" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/error_inside_ll" n1:background="@drawable/bg_dialog_btn" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip">
+        <TextView n1:textSize="20.0sp" n1:textColor="@color/prompt_color" n1:gravity="center_horizontal" n1:id="@id/error_title_tv" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="〒▽〒" />
+        <View n1:background="#ffccced4" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="10.0dip" />
+        <TextView n1:textSize="16.0sp" n1:textColor="@color/prompt_error_color" n1:gravity="center" n1:id="@id/error_info_tv" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <TextView n1:textSize="13.0sp" n1:textColor="@color/prompt_error_color" n1:layout_gravity="center_horizontal" n1:id="@id/error_detail_info_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/Detail_Info" n1:drawableBottom="@drawable/pop_nor" />
+        <View n1:id="@id/error_detail_top_line_v" n1:background="#ffccced4" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginTop="10.0dip" />
+        <TextView n1:textSize="16.0sp" n1:textColor="@color/prompt_error_color" n1:gravity="center_horizontal" n1:id="@id/error_detail_info_text_tv" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/Detail_Info" />
+        <View n1:background="#ffccced4" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_marginTop="5.0dip" n1:layout_marginBottom="5.0dip" />
+        <TextView n1:textSize="18.0sp" n1:textColor="@color/prompt_color" n1:gravity="center" n1:id="@id/ok_tv" n1:padding="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip" n1:text="@string/Sure" />
+    </LinearLayout>
+</LinearLayout>

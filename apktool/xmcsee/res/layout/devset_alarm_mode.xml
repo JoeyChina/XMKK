@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:id="@id/devset_alarm_title" n1:background="@color/theme_color" n1:paddingLeft="10.0dip" n1:paddingTop="8.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height">
+        <TextView n1:textSize="18.0sp" n1:textColor="@color/white" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="alarm_mode" n1:layout_centerInParent="true" />
+        <ImageView n1:id="@id/iv_arrow" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_down_arrow" n1:layout_toRightOf="@id/title" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/left_iv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/back_nor" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.xworld.widget.MyListView n1:id="@id/devset_my_list_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:divider="@null" n1:layout_below="@id/devset_alarm_title" />
+    <ListView n1:id="@id/mode_menu_lv" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:divider="@null" n1:layout_below="@id/devset_alarm_title" />
+    <FrameLayout n1:id="@id/replaceLayout" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</RelativeLayout>

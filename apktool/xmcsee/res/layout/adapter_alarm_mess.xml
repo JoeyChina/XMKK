@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/rl_push_result_layout" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/mess_ll" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="18.0dip" n1:layout_centerVertical="true">
+        <TextView n1:textSize="18.0sp" n1:textColor="@color/login_page_color" n1:gravity="center_vertical" n1:id="@id/tv_alarm_mess_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip" n1:text="20:23:21" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="16.0sp" n1:textColor="@color/hint_color" n1:id="@id/tv_alarm_mess_num" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip" n1:text="VideoMotion" />
+    </LinearLayout>
+    <ImageView n1:id="@id/iv_alarm_mess_pic" n1:background="@drawable/alarm_pic_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:layout_marginRight="10.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="5.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.xworld.widget.BadgeImageView n1:id="@id/img_item" n1:background="@drawable/bg_stroke_gray" n1:layout_width="fill_parent" n1:layout_height="95.0dip" n1:scaleType="centerCrop" />
+    <TextView n1:textSize="@dimen/to_small_text_size" n1:textColor="@color/white" n1:ellipsize="end" n1:id="@id/name_item" n1:background="@color/gray_line" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:lines="1" n1:layout_alignLeft="@id/img_item" n1:layout_alignTop="@id/img_item" n1:alpha="0.9" n1:paddingStart="3.0dip" n1:paddingEnd="3.0dip" />
+</RelativeLayout>

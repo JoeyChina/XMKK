@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/bg_dialog_btn" n1:padding="16.0dip" n1:layout_width="fill_parent" n1:layout_height="350.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/dlg_top_rl" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <View n1:id="@id/dlg_top_line" n1:background="#fff75b47" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="18.0sp" n1:textColor="#fff75b47" n1:id="@id/dlg_top_title" n1:background="#ffeeeeee" n1:padding="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="版本更新" n1:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView n1:textSize="16.0sp" n1:textColor="#ff5f5f5f" n1:id="@id/dlg_subtitle" n1:background="#ffeeeeee" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip" n1:text="版本更新" />
+    <ListView n1:id="@id/dlg_content_list" n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="8.0dip" n1:divider="@null" n1:dividerHeight="0.0dip" n1:layout_weight="1.0" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="24.0dip" n1:layout_alignParentBottom="true">
+        <RelativeLayout n1:background="@drawable/shape_update_dlg_positive" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:layout_marginRight="8.0dip" n1:layout_weight="1.0">
+            <TextView n1:gravity="center" n1:id="@id/nagative_button" n1:padding="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+            <TextView n1:gravity="center" n1:id="@id/nagative_button_overlay" n1:background="#88000000" n1:padding="8.0dip" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout n1:background="@drawable/shape_update_dlg_nagetive" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:layout_marginLeft="8.0dip" n1:layout_weight="1.0">
+            <TextView n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/positive_button" n1:padding="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+            <TextView n1:gravity="center" n1:id="@id/positive_button_overlay" n1:background="#88000000" n1:padding="8.0dip" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

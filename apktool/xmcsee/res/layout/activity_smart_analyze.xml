@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/smart_analyze_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightTextColor="@android:color/white" n2:TitleText="smart_analyze" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:paddingLeft="30.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="50.0dip">
+                <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="smart_analyze_alarm" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                <CheckBox n1:id="@id/smart_analyze_alarm" n1:background="@drawable/smart_analyze_switch" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:button="@null" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View style="@style/smart_analyze_Line" />
+            <RelativeLayout n1:paddingLeft="30.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="50.0dip">
+                <TextView n1:textColor="@color/login_page_color" n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="smart_analyze_show_trace" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                <CheckBox n1:id="@id/smart_analyze_show_trace" n1:background="@drawable/smart_analyze_switch" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:button="@null" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View style="@style/smart_analyze_Line" />
+            <TextView n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:gravity="center_vertical" n1:id="@id/smart_analyze_alert_type" n1:background="@color/white" n1:paddingLeft="30.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="50.0dip" n1:text="smart_analyze_alert_type" n1:drawableRight="@drawable/down_arrow" n1:layout_toRightOf="@id/checkbox_alert_boundary" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/smart_analyze_alert_type_children" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <View style="@style/smart_analyze_Line" />
+                <RelativeLayout n1:paddingLeft="30.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <CheckBox n1:id="@id/checkbox_alert_boundary" n1:background="@drawable/feedback_selected" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checked="false" n1:button="@null" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:gravity="center_vertical" n1:id="@id/smart_analyze_alert_boundary" n1:background="@color/white" n1:paddingLeft="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="50.0dip" n1:text="smart_analyze_alert_boundary" n1:drawableRight="@drawable/down_arrow" n1:layout_toRightOf="@id/checkbox_alert_boundary" />
+                </RelativeLayout>
+                <View style="@style/smart_analyze_Line" />
+                <LinearLayout n1:orientation="vertical" n1:id="@id/smart_analyze_alert_boundary_children" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <CheckBox n1:id="@id/alert_line" n1:text="alert_line" style="@style/smart_analyze_list_item" />
+                    <View style="@style/smart_analyze_Line" />
+                    <CheckBox n1:id="@id/alert_area" n1:text="alert_area" style="@style/smart_analyze_list_item" />
+                    <View style="@style/smart_analyze_Line" />
+                </LinearLayout>
+                <RelativeLayout n1:paddingLeft="30.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <CheckBox n1:id="@id/checkbox_goods_tend" n1:background="@drawable/feedback_selected" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checked="false" n1:button="@null" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:gravity="center_vertical" n1:id="@id/smart_analyze_goods_tend" n1:background="@color/white" n1:paddingLeft="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="50.0dip" n1:text="smart_analyze_goods_tend" n1:drawableRight="@drawable/down_arrow" n1:layout_toRightOf="@id/checkbox_goods_tend" />
+                </RelativeLayout>
+                <View style="@style/smart_analyze_Line" />
+                <LinearLayout n1:orientation="vertical" n1:id="@id/smart_analyze_goods_tend_children" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <CheckBox n1:id="@id/goods_article_retention" n1:text="goods_retention" style="@style/smart_analyze_list_item" />
+                    <View style="@style/smart_analyze_Line" />
+                    <CheckBox n1:id="@id/stolen_goods" n1:text="stolen_goods" style="@style/smart_analyze_list_item" />
+                    <View style="@style/smart_analyze_Line" />
+                </LinearLayout>
+                <RelativeLayout n1:paddingLeft="30.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <CheckBox n1:id="@id/checkbox_video_judge" n1:background="@drawable/feedback_selected" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checked="false" n1:button="@null" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="15.0sp" n1:textColor="@color/login_page_color" n1:gravity="center_vertical" n1:id="@id/smart_analyze_video_judge" n1:background="@color/white" n1:paddingLeft="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="50.0dip" n1:text="smart_analyze_video_judge" n1:drawableRight="@drawable/down_arrow" n1:layout_toRightOf="@id/checkbox_video_judge" />
+                </RelativeLayout>
+                <LinearLayout n1:orientation="vertical" n1:id="@id/smart_analyze_video_judge_children" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <View style="@style/smart_analyze_Line" />
+                    <CheckBox n1:id="@id/smart_analyze_scene_change" n1:button="@null" n1:text="smart_analyze_scene_change" style="@style/smart_analyze_list_item" />
+                    <View style="@style/smart_analyze_Line" />
+                    <CheckBox n1:id="@id/smart_analyze_signal_loss_detection" n1:button="@null" n1:text="smart_analyze_signal_loss_detection" style="@style/smart_analyze_list_item" />
+                    <View style="@style/smart_analyze_Line" />
+                    <CheckBox n1:id="@id/smart_analyze_sharpness_detection" n1:button="@null" n1:text="smart_analyze_sharpness_detection" style="@style/smart_analyze_list_item" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.ui.controls.ListSelectItem n1:id="@id/smart_analyze_alarm_time" n1:background="@color/white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:ItemTitleColor="@color/login_page_color" n3:LineColor="@color/line_color" n3:Title="smart_analyze_alarm_time" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

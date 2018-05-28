@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/alarm_bell_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightTextColor="@color/white" n2:TitleText="alarm_mess_ring" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <RadioGroup n1:orientation="vertical" n1:id="@id/ring" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RadioButton n1:textSize="@dimen/small_text_size" n1:textColor="@color/login_page_color" n1:id="@id/ring_buzz" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:button="@null" n1:text="ring_buzz" n1:drawableLeft="@drawable/radio_btn" n1:drawablePadding="5.0dip" />
+            <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+            <RadioButton n1:textSize="@dimen/small_text_size" n1:textColor="@color/login_page_color" n1:id="@id/ring_alarm" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:button="@null" n1:text="ring_alarm" n1:drawableLeft="@drawable/radio_btn" n1:drawablePadding="5.0dip" />
+            <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+            <RadioButton n1:textSize="@dimen/small_text_size" n1:textColor="@color/login_page_color" n1:id="@id/ring_more" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:button="@null" n1:text="more" n1:drawableLeft="@drawable/radio_btn" n1:drawablePadding="5.0dip" />
+        </RadioGroup>
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="80.0dip" n1:layout_marginTop="100.0dip" n1:layout_marginRight="15.0dip" n1:layout_alignParentRight="true">
+            <TextView n1:ellipsize="end" n1:id="@id/ring_tong_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

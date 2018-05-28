@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <com.ui.controls.XTitleBar n1:id="@id/xtb_edit_preset" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightText="finish" n2:RightTextColor="@color/white" n2:TitleText="" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.ui.controls.ListSelectItem n1:id="@id/lsi_preset_name" n1:background="@color/white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:Cap="" n3:CapColor="@color/login_page_color" n3:ItemTitleColor="@color/login_page_color" n3:LineColor="@color/line_color" n3:Title="preset_name" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <com.ui.controls.ListSelectItem n1:id="@id/lsi_preset_img" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:Cap="" n4:CapColor="@color/login_page_color" n4:ItemTitleColor="@color/login_page_color" n4:LineColor="@color/line_color" n4:Title="cover_img" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <com.ui.controls.ListSelectItem n1:id="@id/lsi_preset_link" n1:background="@color/white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n5:Cap="" n5:CapColor="@color/login_page_color" n5:ImageRight1="@drawable/icon_show" n5:ImageRight2="@drawable/icon_next" n5:ItemTitleColor="@color/login_page_color" n5:LineColor="@color/line_color" n5:Title="link_alarm_dev" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <android.support.v7.widget.RecyclerView n1:id="@id/rv_sensors" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button n1:textSize="@dimen/normal_text_size" n1:textColor="@color/theme_color" n1:gravity="center" n1:id="@id/delete_preset" n1:background="@drawable/bg_stroke_red" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="30.0dip" n1:text="delete_preset" n1:textAllCaps="false" n1:layout_marginStart="50.0dip" n1:layout_marginEnd="50.0dip" />
+</LinearLayout>

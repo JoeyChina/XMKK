@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:background="@color/white" n1:paddingTop="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="16.0sp" n1:textColor="#ff03a3ff" n1:gravity="center" n1:id="@id/popup_record" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="video_equipment" n1:drawableTop="@drawable/fragment_device_video" n1:drawablePadding="10.0dip" n1:layout_weight="1.0" />
+        <TextView n1:textSize="16.0sp" n1:textColor="#ffffac35" n1:gravity="center" n1:id="@id/popup_cloud" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="video_cloud" n1:drawableTop="@drawable/fragment_cloud_video" n1:drawablePadding="10.0dip" n1:layout_weight="1.0" />
+        <TextView n1:textSize="16.0sp" n1:textColor="#ff52b155" n1:gravity="center" n1:id="@id/popup_album" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="photo_equipment" n1:drawableTop="@drawable/fragment_device_album" n1:drawablePadding="10.0dip" n1:layout_weight="1.0" />
+    </LinearLayout>
+    <View n1:id="@id/line" n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" n1:layout_below="@id/popup_record" />
+    <TextView n1:textSize="16.0sp" n1:gravity="center" n1:id="@id/popup_cancel" n1:paddingTop="13.0dip" n1:paddingBottom="13.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="cancel" n1:layout_below="@id/line" />
+</LinearLayout>

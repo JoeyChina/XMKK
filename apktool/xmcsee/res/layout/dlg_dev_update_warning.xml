@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/rlDialogCheck" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:layout_alignParentBottom="true">
+        <com.ui.controls.ButtonCheck n1:id="@id/cbNotAgain" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" n2:NormalBkg="@drawable/nor" n2:SelectedBkg="@drawable/sel" n2:TextNormalColor="@color/hint_color" n2:TextSelectedColor="@color/hint_color" n2:rightText="not_again" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:textColor="@color/update_cancel" n1:id="@id/txtViewNext" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="view_next" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView n1:id="@id/slvDialogContent" n1:paddingLeft="20.0dip" n1:paddingTop="10.0dip" n1:paddingRight="20.0dip" n1:paddingBottom="10.0dip" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/rlDialogCheck">
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/xm_dlg_color_2" n1:autoLink="web" n1:id="@id/txtDialogContent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <include n1:id="@id/icdQuickConfigTip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/dlg_quick_confing_problem_tip" />
+            <include n1:id="@id/icdDevProblemTip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/dlg_dev_problems_tip" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

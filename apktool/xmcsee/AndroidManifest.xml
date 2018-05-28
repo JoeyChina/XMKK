@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.xm.xmcsee">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.xm.xmcsee.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.xm.xmcsee.permission.C2D_MESSAGE"/>
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.mobile.main.MyApplication" android:theme="@style/AppTheme">
+        <provider android:authorities="com.xm.xmcsee.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name="com.module.advert.view.WelcomeActivity" android:screenOrientation="portrait" android:theme="@style/WelcomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="goods" android:pathPrefix="/personal.html" android:port="8888" android:scheme="znn"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xworld.activity.HomePageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.LoginPageActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.xworld.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.ForgetPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.InputDevicePsdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.AddDeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.RouteSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.LEDStateRemindActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.UpdateFileManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.SnAddDevActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dtr.zxing.activity.CaptureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.QuickConfigResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.WifiConfigResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.SetDevNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.SetDevPsdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.DevSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.DevDyncAlarmActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.xworld.devset.AlarmMessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.DevBasicSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.DevPsdManageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.DevStorageSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.advanceSet.view.DevAdvancedSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.DevAboutSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:name="com.xworld.activity.MonitorActivity" android:screenOrientation="portrait" android:theme="@style/SampleTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.xworld.activity.PlayBackActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:name="com.xworld.activity.CloudPlayBackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.LocalVideoActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.xworld.activity.DeviceMediaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.DeviceMediaViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.SquareShowImgActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.MFCommunityActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:name="com.xworld.activity.ShortVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.VerifiProductActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.xworld.devset.AlarmPicActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.xworld.devset.AlarmPicViewActivity" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xworld.service.AlarmPushService" android:persistent="true"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xworld.service.APPUpdateService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xworld.service.StartAppCheckService" android:persistent="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:name="com.xworld.devset.AlarmSettingActivity" android:screenOrientation="portrait" android:theme="@style/SampleTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:name="com.xworld.devset.AlarmSettingDateSelectActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:name="com.xworld.devset.AlarmSettingLabelActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:name="com.xworld.activity.DownloadTaskActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xworld.service.VideoDownLoadService"/>
+        <activity android:name="com.xworld.activity.LoggingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.LoggingSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.ResetUserPsdActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mob.tools.MobUIShell" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="cn.sharesdk.demo.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="com.xworld.receiver.LanguageBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xworld.receiver.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xworld.service.AlarmPushService$DeviceUpdateReceiver"/>
+        <activity android:name="com.xworld.activity.AddAlarmDetectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.AlarmDetectionMsgActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.alert.view.AlertSetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.SmartAnalyzeActivity" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xworld.service.XmCSeeFireBaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.xm.xmcsee.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sdksample"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.module.personal.ui.NoticeMessageListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.module.otherlogin.ui.BindOtherAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.preset.view.PresetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.preset.view.PresetPreActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.preset.view.PresetEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.module.personal.ui.OtherFindActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.module.personal.ui.AboutAppActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.module.personal.ui.FileManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.module.personal.ui.PersonalSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.developerSet.view.DeveloperOptionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.devset.advanceSet.view.WifiConfigActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.module.personal.ui.FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.module.personal.ui.BindAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.module.personal.ui.ModifyUserPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.module.otherlogin.ui.FirstLoginByWeChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.media.picture.view.LocalPicViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:name="com.xworld.devset.WebActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xworld.activity.VoiceRemindActivity" android:screenOrientation="portrait"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <activity android:label="@string/app_name" android:name="com.example.libfisheye.MainActivity"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.xm.xmcsee"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.xm.xmcsee.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

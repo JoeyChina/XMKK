@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/ll" n1:background="#ffff00ff" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/titleLayout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="3.0dip" />
+    <View n1:id="@id/viewCircle" n1:background="@drawable/circle" n1:layout_width="5.0dip" n1:layout_height="5.0dip" n1:layout_marginBottom="8.0dip" />
+</LinearLayout>

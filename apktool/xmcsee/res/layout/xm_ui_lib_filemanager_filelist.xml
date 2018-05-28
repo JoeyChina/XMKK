@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:minHeight="40.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_centerVertical="true" />
+    <TextView n1:textColor="@color/xm_dlg_color_4" n1:id="@id/filename" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="5.0dip" n1:drawSelectorOnTop="false" n1:layout_toRightOf="@id/icon" n1:layout_centerVertical="true" />
+    <Button n1:textSize="10.0dip" n1:textColor="@color/app_theme_color" n1:id="@id/saveBtn" n1:background="@drawable/save_bg" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="25.0dip" n1:layout_marginRight="12.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+</RelativeLayout>

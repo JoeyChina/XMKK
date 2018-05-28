@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:paddingLeft="@dimen/item_margin" n1:paddingRight="@dimen/item_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/small_spacing">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height">
+            <TextView n1:textSize="@dimen/item_title_text" n1:textColor="@color/login_page_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="UserName1" />
+            <AutoCompleteTextView n1:textSize="@dimen/item_value_text" n1:textColor="@color/login_page_color" n1:textColorHint="@color/hint_color" n1:gravity="center" n1:id="@id/et_reg_username" n1:background="@null" n1:paddingLeft="@dimen/small_spacing" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="UserInputTip" n1:layout_weight="1.0" n1:inputType="textEmailAddress" n1:imeOptions="actionNext" />
+            <com.ui.controls.ButtonCheck n1:id="@id/btnUserCheck" n1:visibility="invisible" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:NormalBkg="@drawable/tab_cancel_sel" n2:SelectedBkg="@drawable/select_all_sel" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/line_height" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height">
+            <TextView n1:textSize="@dimen/item_title_text" n1:textColor="@color/login_page_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Password1" />
+            <com.ui.controls.UserPassEditText n1:textSize="@dimen/item_value_text" n1:textColor="@color/login_page_color" n1:textColorHint="@color/hint_color" n1:gravity="center" n1:id="@id/register_passwd" n1:background="@null" n1:paddingLeft="@dimen/normal_spacing" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="PwdInputTip" n1:maxLength="32" n1:layout_weight="1.0" n1:inputType="textPassword" n1:imeOptions="actionDone" />
+            <com.ui.controls.ButtonCheck n1:id="@id/register_show_password_iv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n3:NormalBkg="@drawable/icon_hide_nor" n3:SelectedBkg="@drawable/icon_hide_sel" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/line_height" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height">
+            <TextView n1:textSize="@dimen/item_title_text" n1:textColor="@color/login_page_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="confirm_psd" />
+            <com.ui.controls.UserPassEditText n1:textSize="@dimen/item_value_text" n1:textColor="@color/login_page_color" n1:textColorHint="@color/hint_color" n1:gravity="center" n1:id="@id/register_passwd2" n1:background="@null" n1:paddingLeft="@dimen/normal_spacing" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="PwdInputTip2" n1:maxLength="32" n1:layout_weight="1.0" n1:inputType="textPassword" n1:imeOptions="actionDone" />
+            <com.ui.controls.ButtonCheck n1:id="@id/register_show_password_iv2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n4:NormalBkg="@drawable/icon_hide_nor" n4:SelectedBkg="@drawable/icon_hide_sel" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.ui.controls.BtnColorBK n1:textSize="@dimen/button_text_size" n1:textColor="@color/white" n1:id="@id/register_ok_btn" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/item_margin" n1:layout_marginTop="@dimen/big_spacing" n1:layout_marginRight="@dimen/item_margin" n1:text="register" n1:layout_below="@id/register_captcha_view" n1:textAllCaps="false" n5:corners="@dimen/btn_corners" n5:no_press_solid="@color/theme_color" n5:pressed_solid="@color/light_theme_color" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

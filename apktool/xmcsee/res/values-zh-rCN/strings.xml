@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Cancel">取消</string>
+    <string name="Connect_Failed">连接失败，请刷新</string>
+    <string name="Connecting">正在连接...</string>
+    <string name="Consumption_Warning">您当前用的是3G/4G网络，请注意您的流量消耗</string>
+    <string name="Detail_Info">详细信息</string>
+    <string name="Device_Busy">设备繁忙</string>
+    <string name="Error">错误代码:</string>
+    <string name="Error_Prompt">错误提示</string>
+    <string name="Hour">时</string>
+    <string name="Minute">分</string>
+    <string name="No_Video">无视频</string>
+    <string name="Ok">确定</string>
+    <string name="PassWord_Too_Long_Prompt">密码太长</string>
+    <string name="Play_Completed">回放结束</string>
+    <string name="Play_Failed_Reconnet">正在缓冲，请稍候…</string>
+    <string name="Play_Opening">正在缓冲，请稍候…</string>
+    <string name="State_Cannot_Play">"转发路数受限
+请双击查看"</string>
+    <string name="Sure">确认</string>
+    <string name="Video_Hint">视频打开成功</string>
+    <string name="Waiting">正在操作中...</string>
+    <string name="abc_action_bar_home_description">转到主屏幕</string>
+    <string name="abc_action_bar_home_description_format">%1$s：%2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s - %2$s：%3$s</string>
+    <string name="abc_action_bar_up_description">转到上一层级</string>
+    <string name="abc_action_menu_overflow_description">更多选项</string>
+    <string name="abc_action_mode_done">完成</string>
+    <string name="abc_activity_chooser_view_see_all">查看全部</string>
+    <string name="abc_activitychooserview_choose_application">选择应用</string>
+    <string name="abc_capital_off">关闭</string>
+    <string name="abc_capital_on">开启</string>
+    <string name="abc_search_hint">搜索…</string>
+    <string name="abc_searchview_description_clear">清除查询</string>
+    <string name="abc_searchview_description_query">搜索查询</string>
+    <string name="abc_searchview_description_search">搜索</string>
+    <string name="abc_searchview_description_submit">提交查询</string>
+    <string name="abc_searchview_description_voice">语音搜索</string>
+    <string name="abc_shareactionprovider_share_with">分享方式</string>
+    <string name="abc_shareactionprovider_share_with_application">通过%s分享</string>
+    <string name="abc_toolbar_collapse_description">收起</string>
+    <string name="app_name">雄迈看看</string>
+    <string name="app_name_debug">雄迈看看体验版</string>
+    <string name="common_google_play_services_unknown_issue">%1$s无法访问 Google Play 服务，请重试。</string>
+    <string name="enter_pass">输入密码</string>
+    <string name="enter_pass_again">再次输入密码</string>
+    <string name="fcm_fallback_notification_channel_label">其他</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="modify_e">修改密码</string>
+    <string name="search_menu_title">搜索</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

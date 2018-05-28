@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/device_media_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightBtn_Nor="@drawable/calendar" n2:RightBtn_Sel="@drawable/calendar" n2:TitleText="photo_equipment" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.xworld.widget.MyListView n1:id="@id/devPicture" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/device_media_title" />
+    <ImageView n1:id="@id/imgDevPictureEmpty" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/tip_dev_pictures_list_empty" n1:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/visit_login_title" n1:background="@drawable/visit_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/visit_back_nor" n2:LeftBtn_Sel="@drawable/visit_back_sel" n2:TitleText="login_visit" n2:TitleTextColor="@color/theme_color" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:paddingLeft="18.0dip" n1:paddingRight="18.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/visit_login_title">
+        <EditText n1:textSize="@dimen/middle_text_size" n1:textColor="@color/login_page_color" n1:textColorHint="@drawable/visit_hint_shape" n1:id="@id/et_sn" n1:background="@drawable/et_shape" n1:paddingLeft="16.0dip" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginTop="36.0dip" n1:hint="login_sn" />
+        <EditText n1:textSize="@dimen/middle_text_size" n1:textColor="@color/login_page_color" n1:textColorHint="@drawable/visit_hint_shape" n1:id="@id/et_psd" n1:background="@drawable/et_shape" n1:paddingLeft="16.0dip" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginTop="20.0dip" n1:layout_marginBottom="50.0dip" n1:hint="password" n1:inputType="textPassword" />
+        <com.ui.controls.BtnColorBK n1:textSize="@dimen/btn_text" n1:textColor="@color/white" n1:id="@id/login_page_btn_login" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="login" n1:textAllCaps="false" n3:corners="@dimen/btn_corners" n3:no_press_solid="@color/theme_color" n3:pressed_solid="@color/light_theme_color" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</RelativeLayout>

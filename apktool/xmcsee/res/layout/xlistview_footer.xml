@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:background="#00ffffff" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/xlistview_footer_content" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/xlistview_footer_progressbar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+            <ProgressBar n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginBottom="2.0dip" />
+            <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="xlistview_header_hint_loading" />
+        </LinearLayout>
+        <TextView n1:id="@id/xlistview_footer_hint_textview" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="xlistview_footer_hint_normal" n1:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

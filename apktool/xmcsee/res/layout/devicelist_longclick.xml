@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:background="@drawable/rectangle_white_bottom_gray_shape" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="19.0sp" n1:textColor="@color/theme_color" n1:id="@id/title_tv" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="10.0dip" n1:text="device_management" />
+    <LinearLayout n1:background="#eeaeaeae" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <Button n1:textSize="16.0sp" n1:gravity="center|left" n1:id="@id/modify" n1:background="@drawable/red_onfocus_selector" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="10.0dip" n1:text="general_modify" />
+    <LinearLayout n1:background="#eeececec" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <Button n1:textSize="16.0sp" n1:gravity="center|left" n1:id="@id/delete" n1:background="@drawable/red_onfocus_selector" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="10.0dip" n1:text="Delete" />
+</LinearLayout>

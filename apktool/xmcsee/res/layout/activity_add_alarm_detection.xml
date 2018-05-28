@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:background="@drawable/socket2_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/alarm_dection_title" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/visit_back_nor" n2:LeftBtn_Sel="@drawable/visit_back_sel" n2:TitleText="add_alarm_detection_dev" n2:TitleTextColor="@color/theme_color" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n1:id="@id/content" n1:background="@android:color/transparent" n1:padding="5.0dip" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <com.xworld.widget.RadarSearchLayout n1:id="@id/radar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" />
+        <TextView n1:textSize="18.0sp" n1:textColor="@color/white" n1:id="@id/tvSecond" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="60'" n1:layout_centerInParent="true" />
+        <TextView n1:textSize="@dimen/small_text_size" n1:textColor="@color/main_bottom_color" n1:gravity="center" n1:id="@id/tv_description" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="100.0dip" n1:text="add_alarm_detection_dev_tips" n1:layout_below="@id/tvSecond" n1:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.ui.controls.BtnColorBK n1:textSize="@dimen/middle_text_size" n1:textColor="@color/white" n1:layout_gravity="bottom" n1:id="@id/alarm_dection_cancel_btn" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="18.0dip" n1:layout_marginRight="18.0dip" n1:layout_marginBottom="28.0dip" n1:text="cancel" n1:textAllCaps="false" n3:corners="@dimen/btn_corners" n3:no_press_solid="@color/theme_color" n3:pressed_solid="@color/light_theme_color" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

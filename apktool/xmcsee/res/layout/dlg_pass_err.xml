@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:background="@drawable/shape_fill_white_r15" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+        <TextView n1:textSize="18.0sp" n1:textColor="@color/dlg_color" n1:layout_gravity="center_horizontal" n1:id="@id/txtDigTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="18.0dip" n1:text="@string/enter_pass" />
+        <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/llTips" n1:paddingTop="5.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <TextView n1:id="@id/devId" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:textSize="12.0sp" n1:id="@id/txtTip" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" />
+        </LinearLayout>
+        <EditText n1:textSize="14.0dip" n1:textColorHint="#ffdddddd" n1:id="@id/editInputPass" n1:background="@drawable/rectangle_white_bottom_ash_shape" n1:padding="8.0dip" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="18.0dip" n1:layout_marginRight="20.0dip" n1:hint="@string/enter_pass" n1:drawableLeft="@drawable/icon_lock_black" n1:drawablePadding="7.0dip" n1:inputType="textPassword" />
+        <View n1:id="@id/line" n1:background="@color/gray_line" n1:layout_width="fill_parent" n1:layout_height="0.8000001dip" n1:layout_marginTop="16.0dip" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="2.0">
+            <Button n1:textSize="14.0dip" n1:textColor="@color/gray_424242" n1:id="@id/btnDigCancel" n1:background="@drawable/btn_dlg_error_left" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/Cancel" n1:layout_weight="1.0" n1:textAllCaps="false" />
+            <View n1:background="@color/gray_line" n1:layout_width="0.8000001dip" n1:layout_height="fill_parent" />
+            <Button n1:textSize="14.0dip" n1:textColor="@color/gray_424242" n1:id="@id/btnDigOk" n1:background="@drawable/btn_dlg_error_right" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/Ok" n1:layout_weight="1.0" n1:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

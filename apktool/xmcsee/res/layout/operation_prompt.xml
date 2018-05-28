@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/xm_dlg_color_2" n1:id="@id/point" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="10.0dip" n1:text="" />
+    <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/xm_dlg_color_2" n1:id="@id/content_tv" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="10.0dip" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="10.0dip" n1:text="" n1:layout_toRightOf="@id/point" />
+</RelativeLayout>

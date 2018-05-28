@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/developer_set_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightText="finish" n2:RightTextColor="@color/white" n2:TitleText="developer_options" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/developer_set_title">
+        <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:orientation="horizontal" n1:id="@id/snNetConfig_ll" n1:background="@color/white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.ui.controls.ListSelectItem n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n3:ItemTitleColor="@color/login_page_color" n3:LineColor="@color/line_color" n3:Title="network_mode" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                <Spinner n1:textColor="@color/login_page_color" n1:gravity="right" n1:id="@id/snNetConfig" n1:background="@drawable/spinner_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/rlFPS" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.ui.controls.ListSelectItem n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n4:ItemTitleColor="@color/login_page_color" n4:LineColor="@color/line_color" n4:Title="ad_fps" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+                <SeekBar n1:id="@id/developer_fps" n1:paddingRight="26.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="61.0dip" n1:max="24" n1:progress="25" n1:layout_toLeftOf="@id/developer_fps_tv" n1:layout_centerVertical="true" style="@style/SeekBar_Normal" />
+                <TextView n1:textSize="14.0sp" n1:textColor="@color/login_page_color" n1:layout_gravity="center|right" n1:id="@id/developer_fps_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.ui.controls.BtnColorBK n1:textSize="@dimen/btn_text" n1:textColor="@color/theme_color" n1:id="@id/ad_save" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:layout_marginRight="16.0dip" n1:layout_marginBottom="38.0dip" n1:text="ad_save" n1:layout_alignParentBottom="true" n1:textAllCaps="false" n5:corners="@dimen/btn_corners" n5:no_press_solid="@color/white" n5:pressed_solid="@color/grey_white" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

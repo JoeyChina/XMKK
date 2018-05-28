@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/imgLogo" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/welcome" n1:scaleType="fitXY" />
+    <TextView n1:textColor="@color/white" n1:layout_gravity="end|center|top" n1:id="@id/skip_ad" n1:background="@drawable/ad_textview_bg" n1:padding="6.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="20.0dip" />
+</FrameLayout>

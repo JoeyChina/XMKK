@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/log_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightBtn_Nor="@drawable/icon_edit" n2:RightBtn_Sel="@drawable/icon_edit" n2:TitleText="Log_Information" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ListView n1:id="@id/listLog" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="1.0" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n1:layout_alignParentBottom="true">
+        <TextView n1:textSize="18.0sp" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_logging_clear" n1:background="#72000000" n1:layout_width="0.0dip" n1:layout_height="@dimen/title_height" n1:text="清空" n1:layout_weight="1.0" />
+        <TextView n1:textSize="18.0sp" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_Head" n1:background="#72000000" n1:layout_width="0.0dip" n1:layout_height="@dimen/title_height" n1:text="开始" n1:layout_weight="1.0" />
+        <TextView n1:textSize="18.0sp" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/tv_End" n1:background="#72000000" n1:layout_width="0.0dip" n1:layout_height="@dimen/title_height" n1:text="最末" n1:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

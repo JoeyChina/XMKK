@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/alarm_interval_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:RightText="alarm_set_save" n2:RightTextColor="@color/white" n2:TitleText="Alarm_interval" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="60.0dip" n1:layout_marginLeft="18.0dip" n1:layout_marginRight="18.0dip">
+        <TextView n1:textSize="16.0sp" n1:textColor="@color/login_page_color" n1:gravity="center_vertical" n1:id="@id/interval_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Alarm_interval_name" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+        <SeekBar n1:id="@id/interval" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:max="1770" n1:progress="30" n1:layout_toLeftOf="@id/interval_tv" n1:layout_toRightOf="@id/interval_text" n1:layout_centerVertical="true" style="@style/SeekBar_Normal" />
+        <TextView n1:textSize="16.0sp" n1:textColor="@color/login_page_color" n1:layout_gravity="center|right" n1:id="@id/interval_tv" n1:layout_width="56.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+</LinearLayout>

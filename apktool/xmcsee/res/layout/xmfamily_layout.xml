@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/title_rl" n1:layout_width="fill_parent" n1:layout_height="40.0dip">
+        <ImageView n1:id="@id/prompt_back" n1:background="@drawable/back_red_sel" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="18.0sp" n1:textColor="@color/theme_color" n1:gravity="center" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="prompt" n1:layout_centerInParent="true" />
+        <ImageView n1:id="@id/prompt_close" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView n1:id="@id/title_bar" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="2.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:layout_below="@id/title_rl" />
+    <ScrollView n1:id="@id/content" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/bottom_rl" n1:layout_below="@id/title_bar" />
+    <FrameLayout n1:id="@id/content_fl" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/bottom_rl" n1:layout_below="@id/title_bar" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/bottom_rl" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <include n1:id="@id/bottom_ll" n1:layout_width="fill_parent" n1:layout_height="40.0dip" layout="@layout/bottom_two_btn" />
+    </LinearLayout>
+</RelativeLayout>

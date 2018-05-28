@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="20.0dip" n1:weightSum="1.0">
+        <EditText n1:textColor="@color/login_page_color" n1:textColorHint="@color/hint_color" n1:gravity="center" n1:id="@id/register_mobile" n1:layout_width="0.0dip" n1:layout_height="@dimen/title_height" n1:hint="phone_num" n1:layout_weight="0.7" n1:textCursorDrawable="@drawable/input_cursor" style="@style/input_common" />
+        <com.ui.controls.BtnColorBK n1:textSize="@dimen/to_small_text_size" n1:textColor="@color/white" n1:id="@id/btn_get_code" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="get_code" n1:layout_weight="0.3" n1:textAllCaps="false" n2:corners="@dimen/btn_corners" n2:no_press_solid="@color/theme_color" n2:pressed_solid="@color/light_theme_color" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <TextView n1:textColor="@color/hint_color" n1:id="@id/tvInfo" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="@dimen/sp_top_bottom" n1:text="Phone_Used_To" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.ui.controls.ButtonCheck n1:id="@id/ckbServiceAgreement" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="8.0dip" n3:NormalBkg="@drawable/nor" n3:SelectedBkg="@drawable/sel" n3:TextNormalColor="@color/hint_color" n3:TextSelectedColor="@color/hint_color" n3:TextSize="@dimen/small_text_size" n3:rightText="read_service_agreement" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:textColor="@color/link" n1:layout_gravity="bottom" n1:id="@id/txtHyperlink" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="registration_service_agreement" n1:maxLines="1" />
+    </LinearLayout>
+    <com.ui.controls.BtnColorBK n1:textSize="@dimen/middle_text_size" n1:textColor="@color/white" n1:id="@id/btn_jump_code" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/sp" n1:layout_marginTop="@dimen/sp_top_bottom_lage" n1:layout_marginRight="@dimen/sp" n1:text="Jump_RegCode" n1:textAllCaps="false" n4:corners="@dimen/btn_corners" n4:no_press_solid="@color/theme_color" n4:pressed_solid="@color/light_theme_color" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/dev_rl" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip">
+        <TextView n1:textSize="17.0sp" n1:id="@id/devname_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_marginRight="5.0dip" n1:text="devname" />
+        <EditText n1:textColor="@color/theme_color" n1:gravity="center_horizontal" n1:id="@id/modify_devname" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:singleLine="true" n1:layout_toRightOf="@id/devname_tv" n1:layout_alignBottom="@id/devname_tv" />
+    </RelativeLayout>
+</LinearLayout>

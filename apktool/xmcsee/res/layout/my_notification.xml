@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/rl_noti_icon" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true">
+        <ImageView n1:id="@id/noti_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="10.0dip" n1:src="@drawable/icon" n1:layout_alignParentLeft="true" n1:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView n1:textSize="18.0sp" n1:id="@id/noti_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="10.0dip" n1:text="15" n1:layout_toRightOf="@id/rl_noti_icon" />
+    <TextView n1:textSize="14.0sp" n1:id="@id/noti_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="10.0dip" n1:text="15#" n1:layout_alignParentRight="true" />
+    <ProgressBar n1:id="@id/noti_pb" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="10.0dip" n1:layout_toRightOf="@id/rl_noti_icon" n1:layout_alignBottom="@id/rl_noti_icon" n1:layout_alignParentRight="true" style="?android:progressBarStyleHorizontal" />
+</RelativeLayout>

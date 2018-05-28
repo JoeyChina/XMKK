@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/item_value_text" n1:textColor="@color/xm_dlg_color_2" n1:id="@id/txtTopHalfContent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    <TextView n1:textSize="@dimen/item_title_text" n1:textColor="@color/black" n1:id="@id/txtBottomHalfTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/small_spacing" n1:layout_below="@id/txtTopHalfContent" />
+    <TextView n1:textSize="@dimen/item_value_text" n1:textColor="@color/xm_dlg_color_2" n1:id="@id/txtBottomHalfContent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/txtBottomHalfTitle" />
+</RelativeLayout>

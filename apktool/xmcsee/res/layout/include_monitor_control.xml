@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:paddingTop="2.0dip" n1:paddingBottom="2.0dip" n1:layout_width="fill_parent" n1:layout_height="45.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.ButtonCheck n1:id="@id/monitor_voice" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n2:NormalBkg="@drawable/aud_silent" n2:SelectedBkg="@drawable/aud_nor" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n1:layout_gravity="center_vertical" n1:background="@color/line_color" n1:layout_width="0.5dip" n1:layout_height="24.0dip" />
+    <com.ui.controls.ButtonCheck n1:id="@id/monitor_type" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n3:NormalBkg="@drawable/smooth" n3:SelectedBkg="@drawable/hd" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n1:layout_gravity="center_vertical" n1:background="@color/line_color" n1:layout_width="0.5dip" n1:layout_height="24.0dip" />
+    <Spinner n1:gravity="center_horizontal" n1:layout_gravity="center" n1:id="@id/monitor_split" n1:background="@color/grey_white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:popupBackground="@color/monitor_top" n1:layout_weight="1.0" n1:dropDownVerticalOffset="4.0dip" n1:spinnerMode="dropdown" />
+    <View n1:layout_gravity="center_vertical" n1:background="@color/line_color" n1:layout_width="0.5dip" n1:layout_height="24.0dip" />
+    <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <com.xworld.widget.RingProgressView n1:textColor="@color/white" n1:layout_gravity="center" n1:id="@id/monitor_montage" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/record_selector" />
+    </LinearLayout>
+    <View n1:layout_gravity="center_vertical" n1:background="@color/line_color" n1:layout_width="0.5dip" n1:layout_height="24.0dip" />
+    <RelativeLayout n1:id="@id/smart_analyze_switch_rl" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <com.ui.controls.ButtonCheck n1:id="@id/smart_analyze_switch" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" n4:NormalBkg="@drawable/smart_analyze_ico" n4:SelectedBkg="@drawable/smart_analyze_ico" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <View n1:layout_gravity="center_vertical" n1:background="@color/line_color" n1:layout_width="0.5dip" n1:layout_height="24.0dip" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/monitor_tour_ll" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <com.ui.controls.ButtonCheck n1:layout_gravity="center" n1:id="@id/monitor_tour" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n5:NormalBkg="@drawable/tour" n5:SelectedBkg="@drawable/tour_on" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <View n1:layout_gravity="center_vertical" n1:background="@color/line_color" n1:layout_width="0.5dip" n1:layout_height="24.0dip" />
+    </LinearLayout>
+    <com.ui.controls.ButtonCheck n1:layout_gravity="center" n1:id="@id/monitor_scr" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n6:NormalBkg="@drawable/scr_full" n6:SelectedBkg="@drawable/scr_full" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <View n1:layout_gravity="center_vertical" n1:background="@color/line_color" n1:layout_width="0.5dip" n1:layout_height="24.0dip" />
+</LinearLayout>

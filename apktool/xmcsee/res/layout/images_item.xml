@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/tvTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="TextView" />
+    <GridView n1:id="@id/gv_images" n1:background="#ffd5e5fc" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:listSelector="@null" n1:horizontalSpacing="2.0dip" n1:verticalSpacing="2.0dip" n1:numColumns="4" n1:layout_weight="1.0" />
+</LinearLayout>

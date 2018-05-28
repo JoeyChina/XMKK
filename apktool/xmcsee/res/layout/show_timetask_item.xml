@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="60.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/to_small_text_size" n1:textColor="@color/show_time" n1:id="@id/tv_label" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:text="睡眠" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+    <TextView n1:textSize="@dimen/to_small_text_size" n1:textColor="@color/show_time" n1:id="@id/tv_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_toRightOf="@id/tv_label" n1:layout_centerVertical="true" />
+    <TextView n1:id="@id/ico" n1:background="@drawable/icon_next" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toLeftOf="@id/ico" n1:layout_toRightOf="@id/tv_time" n1:layout_centerVertical="true">
+        <TextView n1:textSize="@dimen/to_small_text_size" n1:textColor="@color/show_time" n1:gravity="left" n1:id="@id/date_state" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" />
+        <TextView n1:textSize="@dimen/to_small_text_size" n1:textColor="@color/show_time" n1:id="@id/tv_open" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" n1:layout_below="@id/date_state" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/taskdate_rl" n1:background="#80000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/rl_week" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="420.0dip" n1:layout_alignParentBottom="true">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/rl_control">
+            <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="30.0dip" n1:src="@drawable/correct_nor" />
+                <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/hint_color" n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="30.0dip" n1:text="周一" />
+            </RelativeLayout>
+            <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="30.0dip" n1:src="@drawable/correct_nor" />
+                <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/hint_color" n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="30.0dip" n1:text="周二" />
+            </RelativeLayout>
+            <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="30.0dip" n1:src="@drawable/correct_nor" />
+                <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/hint_color" n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="30.0dip" n1:text="周三" />
+            </RelativeLayout>
+            <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="30.0dip" n1:src="@drawable/correct_nor" />
+                <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/hint_color" n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="30.0dip" n1:text="周四" />
+            </RelativeLayout>
+            <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="30.0dip" n1:src="@drawable/correct_nor" />
+                <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/hint_color" n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="30.0dip" n1:text="周五" />
+            </RelativeLayout>
+            <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="30.0dip" n1:src="@drawable/correct_nor" />
+                <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/hint_color" n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="30.0dip" n1:text="周六" />
+            </RelativeLayout>
+            <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="30.0dip" n1:src="@drawable/correct_nor" />
+                <TextView n1:textSize="@dimen/normal_text_size" n1:textColor="@color/hint_color" n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="30.0dip" n1:text="周日" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout n1:id="@id/rl_control" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n1:layout_alignParentBottom="true">
+            <TextView n1:id="@id/split" n1:background="#ffefeff5" n1:layout_width="0.5dip" n1:layout_height="20.0dip" n1:layout_centerInParent="true" />
+            <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/menu_color" n1:gravity="center" n1:id="@id/tv_cancel" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="cancel" n1:layout_toLeftOf="@id/split" />
+            <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/theme_color" n1:gravity="center" n1:id="@id/tv_sure" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="confirm" n1:layout_toRightOf="@id/split" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

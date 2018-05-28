@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.xworld.widget.FixedGallery n1:id="@id/record_file_fg" n1:layout_width="fill_parent" n1:layout_height="80.0dip" n1:spacing="10.0dip" />
+    <com.ui.controls.ImageTextView n1:gravity="center" n1:id="@id/thumb_by_time_it" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true" n2:it_img_height="70.0dip" n2:it_img_width="124.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

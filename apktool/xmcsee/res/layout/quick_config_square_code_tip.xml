@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@android:color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@drawable/bg_selector_white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+        <RelativeLayout n1:background="@drawable/bg_selector_blue" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:id="@id/animation_view" n1:background="@drawable/quick_config_wifi_tip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:scaleType="centerInside" n1:adjustViewBounds="true" n1:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout n1:orientation="vertical" n1:background="@drawable/bg_selector_white" n1:paddingTop="25.0dip" n1:paddingBottom="25.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:gravity="center_vertical" n1:id="@id/square_code_tip" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="25.0dip" n1:text="QRcode_Config_WiFi_tip" />
+            <TextView n1:textSize="@dimen/middle_text_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/square_code_ok" n1:background="@drawable/button_selector" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:minHeight="40.0dip" n1:text="remind_ok" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

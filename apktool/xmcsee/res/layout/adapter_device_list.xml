@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:padding="5.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/image" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/imageview" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/monitor_bg" n1:scaleType="fitXY" />
+        <ImageView n1:id="@id/fish_eye_correct_iv" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/correct_error_thumb" n1:scaleType="fitXY" />
+        <ImageView n1:layout_gravity="center" n1:id="@id/play" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_play" n1:scaleType="fitXY" />
+    </FrameLayout>
+    <TextView n1:textSize="16.0sp" n1:textColor="@color/dev_list_dev_name_color" n1:id="@id/name_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:layout_marginTop="10.0dip" n1:layout_alignParentLeft="true" />
+    <ImageView n1:id="@id/state_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_marginRight="16.0dip" n1:layout_alignParentRight="true" />
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/dev_ll" n1:background="@color/menu_color" n1:layout_width="fill_parent" n1:layout_height="45.0dip" n1:weightSum="4.5" n1:layout_below="@id/image" n1:layout_centerVertical="true">
+        <com.ui.controls.ButtonTouch n1:gravity="center_horizontal" n1:id="@id/dev_share" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.5" n2:BtImageNormalBg="@drawable/icon_family_nor" n2:BtImageSelectedBg="@drawable/icon_family_sel" n2:BtText="main_dev_share" n2:BtTextNormalColor="@color/menu_text_color" n2:BtTextSelectedColor="@color/theme_color" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <ImageView n1:layout_gravity="center_vertical" n1:background="@drawable/seg" n1:layout_width="1.0dip" n1:layout_height="23.0dip" />
+        <com.ui.controls.ButtonTouch n1:gravity="center_horizontal" n1:id="@id/dev_mode" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n3:BtImageNormalBg="@drawable/icon_home_nor" n3:BtImageSelectedBg="@drawable/icon_home_sel" n3:BtText="main_dev_mode" n3:BtTextNormalColor="@color/menu_text_color" n3:BtTextSelectedColor="@color/theme_color" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ImageView n1:layout_gravity="center_vertical" n1:background="@drawable/seg" n1:layout_width="1.0dip" n1:layout_height="23.0dip" />
+        <com.ui.controls.ButtonTouch n1:gravity="center_horizontal" n1:id="@id/dev_mess" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n4:BtImageNormalBg="@drawable/icon_news_nor" n4:BtImageSelectedBg="@drawable/icon_news_sel" n4:BtText="main_dev_mess" n4:BtTextNormalColor="@color/menu_text_color" n4:BtTextSelectedColor="@color/theme_color" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <ImageView n1:layout_gravity="center_vertical" n1:background="@drawable/seg" n1:layout_width="1.0dip" n1:layout_height="23.0dip" />
+        <com.ui.controls.ButtonTouch n1:layout_gravity="center_vertical" n1:id="@id/dev_set" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n5:BtImageNormalBg="@drawable/icon_set_nor" n5:BtImageSelectedBg="@drawable/icon_set_sel" n5:BtText="main_dev_set" n5:BtTextNormalColor="@color/menu_text_color" n5:BtTextSelectedColor="@color/theme_color" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</RelativeLayout>

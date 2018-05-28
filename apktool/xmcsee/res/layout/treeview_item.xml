@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/layoutRoot" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/imageview_nodeImage" n1:paddingLeft="5.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentLeft="true" />
+    <TextView n1:textSize="16.0dip" n1:textColor="#ff333333" n1:id="@id/textview_nodeDescription" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:singleLine="true" n1:layout_weight="1.0" n1:layout_toRightOf="@id/imageview_nodeImage" />
+    <ImageView n1:id="@id/imageview_expandedImage" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" />
+</LinearLayout>

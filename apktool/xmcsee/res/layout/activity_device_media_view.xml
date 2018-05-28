@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/alarm_pic_view_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:TitleText="" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/pic_view_bottom_menu" n1:layout_below="@id/alarm_pic_view_title">
+        <com.xworld.widget.ImgViewPager n1:id="@id/pic_view_viewpager" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ProgressBar n1:id="@id/pb_qrcode" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+    <RelativeLayout n1:layout_gravity="bottom" n1:id="@id/pic_view_bottom_menu" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <View n1:id="@id/edit_li" n1:background="@color/line_color" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:paddingTop="2.0dip" n1:paddingBottom="2.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:weightSum="3.0" n1:layout_below="@id/edit_li">
+            <com.ui.controls.ButtonCheck n1:id="@id/pic_view_video" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n3:NormalBkg="@drawable/menu_video" n3:Text="menu_video" n3:TextNormalColor="@color/login_page_color" n3:TextSelectedColor="@color/login_page_color" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <com.ui.controls.ButtonCheck n1:id="@id/pic_view_save" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n4:NormalBkg="@drawable/menu_save" n4:Text="save" n4:TextNormalColor="@color/login_page_color" n4:TextSelectedColor="@color/login_page_color" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

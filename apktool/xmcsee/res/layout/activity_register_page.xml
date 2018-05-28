@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:background="@color/bg_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.XTitleBar n1:id="@id/register_page_title" n1:background="@color/theme_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/title_height" n2:LeftBtn_Nor="@drawable/back_nor" n2:LeftBtn_Sel="@drawable/back_sel" n2:TitleText="user_register" n2:TitleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textColor="@color/red" n1:gravity="center" n1:id="@id/tvErrorInfo" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/sp" n1:text="" />
+    <ViewFlipper n1:id="@id/viewflipper" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <include n1:id="@id/reg_page_code" layout="@layout/activity_register_page_code" />
+        <include n1:id="@id/reg_page_check_code" layout="@layout/activity_register_page_check" />
+        <include n1:id="@id/reg_page_reg" layout="@layout/activity_register_page_reg" />
+    </ViewFlipper>
+</LinearLayout>

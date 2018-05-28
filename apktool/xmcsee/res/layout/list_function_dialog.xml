@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/layoutRoot" n1:background="@android:color/transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:background="@drawable/dialog_corners_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true">
+        <RelativeLayout n1:id="@id/title_k" n1:background="@drawable/gradual_change" n1:layout_width="fill_parent" n1:layout_height="@dimen/dlg_title_height">
+            <TextView n1:textSize="18.0dip" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/title_devname" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="device_manager" />
+            <ImageView n1:id="@id/close" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.0dip" n1:layout_marginRight="9.0dip" n1:src="@drawable/close_white" n1:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView n1:gravity="center" n1:layout_gravity="center" n1:id="@id/dev_share" n1:background="@drawable/list_function_item_bg" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/dlg_text_height" n1:minHeight="40.0dip" n1:text="main_dev_share" />
+        <View style="@style/smart_analyze_Line" />
+        <TextView n1:gravity="center" n1:layout_gravity="center" n1:id="@id/dev_look_home" n1:background="@drawable/list_function_item_bg" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/dlg_text_height" n1:minHeight="40.0dip" n1:text="main_dev_mode" />
+        <View style="@style/smart_analyze_Line" />
+        <TextView n1:gravity="center" n1:layout_gravity="center" n1:id="@id/dev_mess" n1:background="@drawable/list_function_item_bg" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/dlg_text_height" n1:minHeight="40.0dip" n1:text="main_dev_mess" />
+        <View style="@style/smart_analyze_Line" />
+        <TextView n1:gravity="center" n1:layout_gravity="center" n1:id="@id/dev_set" n1:background="@drawable/list_function_item_bg" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/dlg_text_height" n1:minHeight="40.0dip" n1:text="main_dev_set" />
+        <View style="@style/smart_analyze_Line" />
+        <TextView n1:textColor="@android:color/holo_red_light" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/dev_delete" n1:background="@drawable/list_function_item_bg" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/dlg_text_height" n1:minHeight="40.0dip" n1:text="Delete" />
+    </LinearLayout>
+</RelativeLayout>

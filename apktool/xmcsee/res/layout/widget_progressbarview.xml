@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.ui.controls.SquareProgressView n1:id="@id/squareProgressBar1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignRight="@id/imageView1" n1:layout_alignBottom="@id/imageView1" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" />
+    <com.ui.controls.RecycleImageView n1:id="@id/imageView1" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="fitXY" n1:layout_centerInParent="true" />
+    <TextView n1:textSize="@dimen/small_text_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/tv_file_list_media_type" n1:padding="5.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+    <com.ui.controls.ButtonCheck n1:id="@id/iv_file_list_play_state" n1:focusable="false" n1:visibility="gone" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+    <TextView n1:textColor="@color/white" n1:gravity="center" n1:id="@id/tv_file_list_title_name" n1:background="@drawable/bg_of_textview" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="2016-05-06" n1:layout_alignParentTop="true" />
+    <ImageButton n1:id="@id/iv_file_list_slow_play" n1:background="@null" n1:paddingLeft="5.0dip" n1:focusable="false" n1:visibility="gone" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+    <ImageButton n1:id="@id/iv_file_list_normal_play" n1:background="@null" n1:focusable="false" n1:visibility="gone" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+    <ImageButton n1:id="@id/iv_file_list_fast_play" n1:background="@null" n1:paddingRight="5.0dip" n1:focusable="false" n1:visibility="gone" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+</RelativeLayout>

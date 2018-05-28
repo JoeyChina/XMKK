@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:paddingLeft="8.0dip" n1:paddingTop="@dimen/small_spacing" n1:paddingBottom="@dimen/small_spacing" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/image" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/imageview" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/monitor_bg" n1:scaleType="fitXY" />
+    </FrameLayout>
+    <TextView n1:textSize="15.0sp" n1:textColor="#ff202020" n1:id="@id/name_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="12.0dip" n1:layout_marginTop="8.0dip" n1:layout_toLeftOf="@id/right_content" n1:layout_toRightOf="@id/image" />
+    <TextView n1:textSize="12.0sp" n1:textColor="#ff606060" n1:id="@id/devno_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.0dip" n1:layout_toLeftOf="@id/right_content" n1:layout_toRightOf="@id/image" n1:layout_below="@id/name_tv" n1:layout_alignLeft="@id/name_tv" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/right_content" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/item_margin" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/state_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="7.0dip" />
+        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/show_drag_view" n1:paddingLeft="8.0dip" n1:paddingTop="@dimen/small_spacing" n1:paddingRight="8.0dip" n1:paddingBottom="@dimen/small_spacing" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/drag_sort_ico" />
+    </LinearLayout>
+</RelativeLayout>

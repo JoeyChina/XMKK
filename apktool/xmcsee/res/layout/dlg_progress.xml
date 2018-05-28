@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="18.0dip" n1:layout_marginTop="15.0dip" n1:layout_marginRight="18.0dip">
+            <View n1:layout_gravity="center_vertical" n1:background="@color/four" n1:layout_width="0.0dip" n1:layout_height="0.5px" n1:layout_weight="1.0" />
+            <TextView n1:textSize="16.0sp" n1:textColor="@color/three" n1:gravity="center_horizontal" n1:id="@id/dlg_title" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="视频下载" n1:layout_weight="1.0" />
+            <View n1:layout_gravity="center_vertical" n1:background="@color/four" n1:layout_width="0.0dip" n1:layout_height="0.5px" n1:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:layout_marginBottom="18.0dip">
+            <TextView n1:textSize="14.0sp" n1:id="@id/dlg_msg1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:text="开始下载" />
+            <TextView n1:textSize="14.0sp" n1:id="@id/dlg_msg2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="16.0dip" n1:text="MMMM" n1:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ProgressBar n1:id="@id/progressBar1" n1:layout_width="fill_parent" n1:layout_height="8.0dip" n1:layout_marginLeft="18.0dip" n1:layout_marginRight="18.0dip" n1:layout_marginBottom="18.0dip" n1:progress="100" n1:secondaryProgress="0" n1:progressDrawable="@drawable/dlg_progressbar" style="?android:progressBarStyleHorizontal" />
+        <Button n1:textSize="14.0sp" n1:layout_gravity="center_horizontal" n1:id="@id/dlg_btn" n1:background="@drawable/dlg_btn" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_marginBottom="20.0dip" n1:text="取消" />
+    </LinearLayout>
+</RelativeLayout>

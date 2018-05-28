@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/imageView1" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/pic_bg" />
+    <ImageView n1:id="@id/fish_eye_correct_iv" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/correct_error_thumb_180_180" />
+    <TextView n1:textSize="@dimen/too_small_text_size" n1:textColor="#ffffffff" n1:id="@id/tvContext" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="2.0dip" n1:layout_marginBottom="2.0dip" n1:text="" n1:layout_alignParentLeft="true" n1:layout_alignParentBottom="true" />
+    <com.ui.controls.ButtonCheck n1:textAppearance="?android:textAppearanceSmall" n1:id="@id/bcSelected" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" n1:layout_marginRight="2.0dip" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true" n2:NormalBkg="@drawable/correct_nor" n2:SelectedBkg="@drawable/correct_sel" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n1:id="@id/imageViewPlay" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+</RelativeLayout>

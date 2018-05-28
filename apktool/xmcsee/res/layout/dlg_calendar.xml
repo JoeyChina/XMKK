@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/layoutRoot" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:id="@id/dlg_calendar_select_layout" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.ui.controls.BtnColorBK n1:textSize="@dimen/middle_text_size" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/dlg_calendar_date_btn" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="2015/08" n1:textAllCaps="false" n2:corners="@dimen/btn_corners" n2:no_press_solid="@color/theme_color" n2:pressed_solid="@color/light_theme_color" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <com.xworld.widget.ViewPager n1:id="@id/dlg_calendar_viewpager" n1:background="@drawable/dlg_calendar_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_above="@id/remoteplay_record_type_color" n1:layout_below="@id/dlg_calendar_select_layout" n1:layout_centerInParent="true" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/remoteplay_record_type_color" n1:padding="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <View n1:background="@color/line_color" n1:layout_width="5.0dip" n1:layout_height="5.0dip" />
+        <TextView n1:id="@id/no_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="5.0dip" n1:text="NO_Record" />
+        <View n1:background="@color/record_normal_color" n1:layout_width="5.0dip" n1:layout_height="5.0dip" />
+        <TextView n1:id="@id/have_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="5.0dip" n1:text="Have_Record" />
+        <View n1:background="@color/record_alarm_color" n1:layout_width="5.0dip" n1:layout_height="5.0dip" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="5.0dip" n1:text="Selected_Date" />
+    </LinearLayout>
+</RelativeLayout>
